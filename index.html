@@ -4,67 +4,59 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>alain brown</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
     :root {
-      --text: #000;
-      --muted: #666;
-      --link: #0000ee;
+      --bg: #1e1e1e;
+      --text: #f5f5f5;
+      --muted: #aaa;
+      --link: #4fd1ff;
     }
 
     html,body { height:100%; }
     body {
       margin: 0;
-      background: #fff;
+      background: var(--bg);
       color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-                   Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 20px;
+      line-height: 1.7;
     }
 
-    /* top-right timestamp like Kai's */
     .last-updated {
       position: fixed;
-      top: 14px;
-      right: 16px;
-      font-size: 13px;
+      top: 16px;
+      right: 20px;
+      font-size: 14px;
       color: var(--muted);
-      line-height: 1;
     }
 
-    /* main content column */
     main {
-      max-width: 640px;
-      padding: 72px 16px 32px 16px; /* leave room at top so timestamp doesn't overlap content */
+      max-width: 720px;
+      padding: 80px 20px 40px 20px;
       margin: 0 auto;
     }
 
     p {
       margin: 0;
-      font-size: 18px;
-      line-height: 1.6;
-      color: var(--text);
     }
 
     a {
       color: var(--link);
-      text-decoration: underline;
+      text-decoration: none;
     }
-
-    /* smaller screens tweak */
-    @media (max-width:420px) {
-      .last-updated { top: 10px; right: 12px; font-size: 12px; }
-      main { padding-top: 62px; }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div class="last-updated">Last updated: 2025.09.06</div>
+  <div class="last-updated">last updated: 2025.09.06</div>
 
   <main>
     <p>
-      hi. my name is alain, a software engineer building ai solutions.
-      I <a href="https://alainbrown.github.io">write here</a>, <a href="https://github.com/alainbrown">code here</a>, and <a href="https://twitter.com/">lurk here</a>.
+      hi. my name is alain, a software engineer building ai solutions.  
+      I write <a href="https://alainbrown.github.io">here</a>, code <a href="https://github.com/alainbrown">here</a>, and lurk <a href="https://twitter.com/">here</a>.
     </p>
   </main>
 </body>
