@@ -23,5 +23,8 @@ layout: default
     <a href="https://github.com/alainbrown/stack-agent">
       <img src="https://opengraph.githubassets.com/1/alainbrown/stack-agent" alt="stack-agent" />
     </a>
+    <a href="https://github.com/containerfy/containerfy">
+      <img src="https://opengraph.githubassets.com/1/containerfy/containerfy" alt="containerfy" />
+    </a>
   </div>
 </div>
