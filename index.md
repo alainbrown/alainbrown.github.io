@@ -23,8 +23,5 @@ layout: default
     <a href="https://github.com/alainbrown/stack-agent">
       <img src="https://opengraph.githubassets.com/1/alainbrown/stack-agent" alt="stack-agent" />
     </a>
-    <a href="https://github.com/alainbrown/stack-agent-skill">
-      <img src="https://opengraph.githubassets.com/1/alainbrown/stack-agent-skill" alt="stack-agent-skill" />
-    </a>
   </div>
 </div>

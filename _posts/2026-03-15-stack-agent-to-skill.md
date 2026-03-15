@@ -97,4 +97,4 @@ But it does suggest a shift in where developer tool complexity belongs. Instead 
 
 Whether that trade-off is worth it depends on your users. If they're already in Claude Code, the skill is strictly better — same workflow, no context switch. If they want a dedicated tool with a polished experience, the standalone app wins.
 
-Both are [open source](https://github.com/alainbrown/stack-agent). The skill is installable as a [Claude Code plugin](https://github.com/alainbrown/stack-agent-skill).
+Both are [open source](https://github.com/alainbrown/stack-agent) — the CLI and the skill live in the same repo.
