@@ -1,0 +1,16 @@
+title: alain brown
+description: machine learning engineer building ai systems
+url: "https://ab10.org"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+permalink: /posts/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
