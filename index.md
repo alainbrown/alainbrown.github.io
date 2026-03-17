@@ -20,6 +20,9 @@ layout: default
 <div class="section">
   <h2 class="section-title">Projects</h2>
   <div class="project-grid">
+    <a href="https://github.com/alainbrown/musicprint">
+      <img src="https://opengraph.githubassets.com/1/alainbrown/musicprint" alt="musicprint" />
+    </a>
     <a href="https://github.com/alainbrown/stack-agent">
       <img src="https://opengraph.githubassets.com/1/alainbrown/stack-agent" alt="stack-agent" />
     </a>

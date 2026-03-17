@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 620" font-family="system-ui, -apple-system, sans-serif" font-size="13">
+  <style>
+    rect.box { fill: #1a1a2e; stroke: #3a3a5e; stroke-width: 1.5; rx: 8; }
+    rect.store { fill: #0f3460; stroke: #5390d9; stroke-width: 1.5; rx: 12; }
+    text.title { fill: #e0e0e0; font-weight: 600; font-size: 13px; }
+    text.detail { fill: #8888aa; font-size: 11px; }
+    text.label { fill: #6a6a8a; font-size: 10px; font-style: italic; }
+    line.arrow { stroke: #5390d9; stroke-width: 1.5; }
+    polygon.arrow { fill: #5390d9; }
+  </style>
+
+  <!-- Song -->
+  <rect class="box" x="110" y="10" width="200" height="44"/>
+  <text class="title" x="210" y="28" text-anchor="middle">Song (3 min audio)</text>
+  <text class="detail" x="210" y="43" text-anchor="middle">MP3/FLAC @ 24kHz mono</text>
+
+  <!-- Arrow -->
+  <line class="arrow" x1="210" y1="54" x2="210" y2="80"/>
+  <polygon class="arrow" points="204,76 210,86 216,76"/>
+
+  <!-- Window -->
+  <rect class="box" x="80" y="90" width="260" height="44"/>
+  <text class="title" x="210" y="108" text-anchor="middle">Split into 5s windows</text>
+  <text class="detail" x="210" y="123" text-anchor="middle">~175 overlapping clips, 1s stride</text>
+
+  <!-- Arrow -->
+  <line class="arrow" x1="210" y1="134" x2="210" y2="160"/>
+  <polygon class="arrow" points="204,156 210,166 216,156"/>
+
+  <!-- MERT -->
+  <rect class="box" x="80" y="170" width="260" height="44"/>
+  <text class="title" x="210" y="188" text-anchor="middle">MERT-v1-95M (frozen)</text>
+  <text class="detail" x="210" y="203" text-anchor="middle">mean pool → 768-dim embedding</text>
+
+  <!-- Arrow + label -->
+  <line class="arrow" x1="210" y1="214" x2="210" y2="248"/>
+  <polygon class="arrow" points="204,244 210,254 216,244"/>
+  <text class="label" x="300" y="237" text-anchor="start">175 × 768-dim</text>
+
+  <!-- K-means -->
+  <rect class="box" x="80" y="258" width="260" height="44"/>
+  <text class="title" x="210" y="276" text-anchor="middle">K-means (k=10)</text>
+  <text class="detail" x="210" y="291" text-anchor="middle">175 → 10 representative centroids</text>
+
+  <!-- Arrow + label -->
+  <line class="arrow" x1="210" y1="302" x2="210" y2="336"/>
+  <polygon class="arrow" points="204,332 210,342 216,332"/>
+  <text class="label" x="300" y="325" text-anchor="start">10 × 768-dim</text>
+
+  <!-- PCA -->
+  <rect class="box" x="80" y="346" width="260" height="44"/>
+  <text class="title" x="210" y="364" text-anchor="middle">PCA (768 → 256 dims)</text>
+  <text class="detail" x="210" y="379" text-anchor="middle">remove noise dimensions</text>
+
+  <!-- Arrow + label -->
+  <line class="arrow" x1="210" y1="390" x2="210" y2="424"/>
+  <polygon class="arrow" points="204,420 210,430 216,420"/>
+  <text class="label" x="300" y="413" text-anchor="start">10 × 256-dim</text>
+
+  <!-- Binary hash -->
+  <rect class="box" x="80" y="434" width="260" height="44"/>
+  <text class="title" x="210" y="452" text-anchor="middle">Binary hash (sign bits)</text>
+  <text class="detail" x="210" y="467" text-anchor="middle">positive → 1, negative → 0</text>
+
+  <!-- Arrow + label -->
+  <line class="arrow" x1="210" y1="478" x2="210" y2="520"/>
+  <polygon class="arrow" points="204,516 210,526 216,516"/>
+  <text class="label" x="300" y="505" text-anchor="start">10 × 32 bytes</text>
+
+  <!-- Index -->
+  <rect class="store" x="120" y="530" width="180" height="50"/>
+  <text class="title" x="210" y="552" text-anchor="middle" fill="#e0e0e0">Index</text>
+  <text class="detail" x="210" y="569" text-anchor="middle" fill="#8ab4f8">320 bytes per song</text>
+</svg>
