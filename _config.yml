@@ -8,6 +8,9 @@ kramdown:
 
 permalink: /posts/:title/
 
+plugins:
+  - jekyll-feed
+
 defaults:
   - scope:
       path: ""
