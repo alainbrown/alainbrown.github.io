@@ -1,7 +1,7 @@
 ---
-title: "Shazam in 320 bytes per song"
+title: "An offline Shazam that can run entirely on a phone"
 date: 2026-03-17
-description: "A frozen pretrained audio model identifies songs with 96.5% recall at 3 GB for 10 million songs."
+description: "Identifying songs with 96.5% recall at 25-75x compression compared to Shazam-like spectrograms."
 ---
 
 I wanted to know if you could build an offline Shazam that runs entirely on a phone — no server, no network. The answer is: mostly yes, and you don't even need to train a model.
