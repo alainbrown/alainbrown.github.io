@@ -96,7 +96,7 @@ function footer() {
         type: 'span',
         props: {
           style: { fontSize: '18px', fontWeight: 500, color: C.muted },
-          children: 'ab10.org',
+          children: 'alainbrown.com',
         },
       },
     },

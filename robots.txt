@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ab10.org/sitemap.xml
+Sitemap: https://alainbrown.com/sitemap.xml
