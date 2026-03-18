@@ -55,7 +55,7 @@ Other open questions: how does it handle noisy recordings (phone mic in a bar), 
 
 The code, experiments, and paper are on GitHub: [alainbrown/musicprint](https://github.com/alainbrown/musicprint)
 
-- [Live demo](https://huggingface.co/spaces/alainbrown/musicprint) — record or upload audio, get a match (Gradio on HuggingFace)
+- [Live demo](https://alainbrown-musicprint.hf.space/) — record or upload audio, get a match (Gradio on HuggingFace)
 - [Research paper](https://github.com/alainbrown/musicprint/blob/main/PAPER.md) — full results and methodology
 - [Experiments notebook](https://github.com/alainbrown/musicprint/blob/main/experiments.py) — reproducible in JupyterLab
 - [Embedding dataset](https://huggingface.co/datasets/alainbrown/musicprint-embeddings) — pre-computed MERT embeddings for 6,839 songs
