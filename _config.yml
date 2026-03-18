@@ -1,6 +1,21 @@
 title: alain brown
-description: machine learning engineer building ai systems
+description: software engineer building ai systems
 url: "https://ab10.org"
+
+author:
+  name: Alain Brown
+  url: "https://ab10.org"
+
+twitter:
+  card: summary
+
+social:
+  name: Alain Brown
+  links:
+    - https://github.com/alainbrown
+    - https://linkedin.com/in/alainbrown
+
+logo: https://github.com/alainbrown.png
 
 markdown: kramdown
 kramdown:
@@ -10,6 +25,8 @@ permalink: /posts/:title/
 
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 defaults:
   - scope:

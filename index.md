@@ -1,5 +1,6 @@
 ---
 layout: default
+description: "Software engineer building AI systems. Previously at Google and LinkedIn."
 ---
 
 <div class="section">
@@ -21,13 +22,13 @@ layout: default
   <h2 class="section-title">Projects</h2>
   <div class="project-grid">
     <a href="https://github.com/alainbrown/musicprint">
-      <img src="https://opengraph.githubassets.com/1/alainbrown/musicprint" alt="musicprint" />
+      <img src="https://opengraph.githubassets.com/1/alainbrown/musicprint" alt="musicprint" loading="lazy" />
     </a>
     <a href="https://github.com/alainbrown/stack-agent">
-      <img src="https://opengraph.githubassets.com/1/alainbrown/stack-agent" alt="stack-agent" />
+      <img src="https://opengraph.githubassets.com/1/alainbrown/stack-agent" alt="stack-agent" loading="lazy" />
     </a>
     <a href="https://github.com/containerfy/containerfy">
-      <img src="https://opengraph.githubassets.com/1/containerfy/containerfy" alt="containerfy" />
+      <img src="https://opengraph.githubassets.com/1/containerfy/containerfy" alt="containerfy" loading="lazy" />
     </a>
   </div>
 </div>

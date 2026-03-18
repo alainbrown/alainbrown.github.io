@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Blog
+description: "Writing on AI systems, machine learning engineering, and software development by Alain Brown."
 ---
 
 <h1 class="page-title">Writing</h1>
