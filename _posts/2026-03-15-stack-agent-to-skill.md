@@ -2,6 +2,7 @@
 title: "I replaced my terminal app with a text file"
 date: 2026-03-15
 description: "Comparing a 2,500-line TypeScript CLI to a 230-line Claude Code skill that does the same thing."
+image: /assets/og/stack-agent-to-skill.png
 ---
 
 I built [stack-agent](https://github.com/alainbrown/stack-agent) — an AI-powered CLI that helps developers scaffold full-stack applications. It has a custom fullscreen terminal UI built with React and Ink, its own LLM client with streaming and message caching, a stage-based state machine with cascading invalidation, and 176 tests. It took about a day to build.

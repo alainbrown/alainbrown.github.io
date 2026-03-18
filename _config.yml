@@ -7,7 +7,7 @@ author:
   url: "https://ab10.org"
 
 twitter:
-  card: summary
+  card: summary_large_image
 
 social:
   name: Alain Brown
@@ -16,6 +16,7 @@ social:
     - https://linkedin.com/in/alainbrown
 
 logo: https://github.com/alainbrown.png
+image: /assets/og/default.png
 
 markdown: kramdown
 kramdown:
