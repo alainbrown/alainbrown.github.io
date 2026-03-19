@@ -1,9 +1,19 @@
 ---
-title: "Training efficiency: a modern AI primer for beginners"
+title: "Training efficiency: a modern AI primer for everyone"
 date: 2026-03-19
 description: "Understanding the GPT-2 speedrun — from 45 minutes to 90 seconds — through the lens of systems engineering."
 image: /assets/og/modern-ai-primer.png
 ai_disclosure: "Written with Claude. I wrote the ideas and structure; Claude helped refine the prose."
+---
+
+OpenAI recently launched [Parameter Golf](https://openai.com/index/parameter-golf/) — a challenge to train the best language model that fits in 16 MB and trains in 10 minutes on 8 H100 GPUs, with $1 million in compute credits on the line. As they put it:
+
+> "We're excited to see how optimizing for a parameter-constrained setting pushes people toward unique architectures (test-time compute, aggressive parameter tying, depth recurrence, low-rank training, ...)..." — OpenAI, [Parameter Golf announcement](https://openai.com/index/parameter-golf/)
+
+Friends kept asking me: what does any of this mean? What are parameters? What's a transformer? Why does training efficiency matter? These are deeply technical people — systems engineers, backend developers, infrastructure architects — who could understand this domain if someone explained it without the jargon barrier.
+
+This post is my attempt. It's structured around the GPT-2 speedrun, the community effort that best illustrates why training efficiency is one of the most exciting engineering problems in AI right now.
+
 ---
 
 In May 2024, Andrej Karpathy published [llm.c](https://github.com/karpathy/llm.c) — a training implementation for GPT-2 (Generative Pre-trained Transformer 2, OpenAI's 2019 language model) in ~4,000 lines of C and CUDA. No Python. No PyTorch. Just raw GPU kernels training a 124-million-parameter model on 10 billion tokens — chunks of text, roughly word-sized — in 45 minutes on 8 H100 GPUs.
@@ -16,11 +26,11 @@ Same quality. Same hardware. 31x faster. 25x less data. The model doesn't know t
 
 ## Why this matters
 
-> "GPT-2 is the grand-daddy of LLMs, the first time that the modern LLM stack came together in a recognizably modern form." — Andrej Karpathy, [llm.c discussion #481](https://github.com/karpathy/llm.c/discussions/481)
-
 Training a language model is expensive. GPT-4-class models cost tens of millions of dollars in compute. When someone finds a way to train 31x faster on the same hardware, that's not an incremental improvement — it's a fundamental shift in who gets to participate.
 
 The GPT-2 speedrun is a controlled experiment: fixed model size, fixed hardware, fixed quality bar. The only variable is the training algorithm. That makes it a clean benchmark for a question that matters at every scale: how much intelligence can you extract per dollar of compute?
+
+> "GPT-2 is the grand-daddy of LLMs, the first time that the modern LLM stack came together in a recognizably modern form." — Andrej Karpathy, [llm.c discussion #481](https://github.com/karpathy/llm.c/discussions/481)
 
 Karpathy's original llm.c trained GPT-2 (124M) in 45 minutes on 8 H100s — or 90 minutes on the older A100s, about $20 on Lambda Labs. The modded-nanogpt community did it in under 90 seconds on the same H100 hardware.
 
@@ -169,7 +179,9 @@ This is the shape of every optimization effort. The first pass finds the obvious
 
 **Algorithms compress compute.** The baseline used 10 billion tokens. The current record uses fewer than 400 million. Better optimizers and architecture choices extract more learning per token, and that ratio is the real efficiency metric. When the next generation of models costs $100 million to train, a 25x reduction in token requirements is the difference between one organization affording it and fifty.
 
-**The stack is surprisingly shallow.** Karpathy's llm.c is 4,000 lines of C and CUDA. The modded-nanogpt speedrun is a single Python file. The core ideas — attention, gradients, optimization — are accessible to anyone comfortable with linear algebra and systems programming. The field's reputation for opacity is a product of its jargon, not its depth.
+**The stack is surprisingly shallow.** Karpathy's llm.c is 4,000 lines of C and CUDA. The modded-nanogpt speedrun is a single Python file. The core ideas — attention, gradients, optimization — are accessible to anyone comfortable with linear algebra and systems programming.
+
+This is why Parameter Golf exists — and why it matters beyond the leaderboard. The techniques in this post aren't historical curiosities. They're the playbook. If you can read C, you can read [llm.c](https://github.com/karpathy/llm.c). If you can read Python, the entire modded-nanogpt speedrun is [a single file](https://github.com/KellerJordan/modded-nanogpt). The barrier was never ability. It was knowing where to look.
 
 ---
 
