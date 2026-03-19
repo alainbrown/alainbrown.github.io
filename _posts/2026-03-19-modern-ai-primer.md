@@ -1,5 +1,5 @@
 ---
-title: "Training efficiency: a modern AI primer for engineers"
+title: "Training efficiency: a modern AI primer for beginners"
 date: 2026-03-19
 description: "Understanding the GPT-2 speedrun — from 45 minutes to 90 seconds — through the lens of systems engineering."
 image: /assets/og/modern-ai-primer.png
@@ -32,7 +32,7 @@ A language model predicts the next word. Text is first split into tokens — rou
 
 Training adjusts the model's internal numbers — its [parameters](#parameters) — until those predictions become good. GPT-2 has 124.5 million of them. Each parameter is a number in a matrix; the model is essentially a chain of matrix multiplications with nonlinear functions in between. If you're comfortable with linear algebra, you already understand the computational core.
 
-<img src="/assets/inference-loop.svg" alt="Inference loop: input tokens pass through the transformer, which outputs a probability distribution over next tokens. The highest-probability token is selected and appended to the input, then the process repeats." style="max-width: 520px; margin: 2em auto; display: block;">
+<img src="/assets/posts/modern-ai-primer/inference-loop.svg" alt="Inference loop: input tokens pass through the transformer, which outputs a probability distribution over next tokens. The highest-probability token is selected and appended to the input, then the process repeats." style="max-width: 520px; margin: 2em auto; display: block;">
 
 **The training loop** is a tight inner loop that runs thousands of times:
 
@@ -41,13 +41,13 @@ Training adjusts the model's internal numbers — its [parameters](#parameters) 
 3. **Backward pass** — compute [gradients](#gradients) for all 124 million parameters (how much did each one contribute to the error?)
 4. **Update** — nudge the parameters in the direction that reduces loss
 
-<img src="/assets/training-loop.svg" alt="Training loop: forward pass, compute loss, backward pass, update parameters, repeat ~20,000 times." style="max-width: 520px; margin: 2em auto; display: block;">
+<img src="/assets/posts/modern-ai-primer/training-loop.svg" alt="Training loop: forward pass, compute loss, backward pass, update parameters, repeat ~20,000 times." style="max-width: 520px; margin: 2em auto; display: block;">
 
 The llm.c baseline ran this loop ~20,000 times, processing 0.5 million tokens per iteration. Each iteration took about 43.5 milliseconds. The entire speedrun is about making this loop faster, smarter, or both.
 
 Each step moves the model downhill on its loss landscape — a surface in 124-million-dimensional space where your altitude is how wrong the model is. Early in training, the slopes are steep and progress is fast. Later, near a minimum, the gradients flatten out and each step has to be more careful.
 
-<img src="/assets/loss-landscape.svg" alt="Loss landscape: gradient descent follows the slope downhill. Steep gradients early mean big steps; shallow gradients near convergence mean small steps." style="max-width: 460px; margin: 2em auto; display: block;">
+<img src="/assets/posts/modern-ai-primer/loss-landscape.svg" alt="Loss landscape: gradient descent follows the slope downhill. Steep gradients early mean big steps; shallow gradients near convergence mean small steps." style="max-width: 460px; margin: 2em auto; display: block;">
 
 **The architecture** is a [transformer](#transformer) — a stack of 12 identical layers. Before entering the stack, each token is converted into an embedding: a dense vector of 768 numbers that represents the token's meaning in a continuous space. The word "king" and "queen" end up with similar embeddings because they appear in similar contexts. This conversion from a discrete symbol to a continuous vector is what lets the model do math on language.
 
@@ -58,19 +58,19 @@ Each layer contains two operations:
 
 Here's what attention looks like concretely. When the model processes "the cat sat on", the token "sat" needs to figure out which earlier tokens are relevant for predicting what comes next. It computes a weight for each previous token — how much to pay attention to it — then blends their representations together:
 
-<img src="/assets/attention-weights.svg" alt="Attention weights: the token 'sat' assigns weights to all previous tokens. 'cat' gets the highest weight (0.62) because it's most relevant for predicting what follows." style="max-width: 460px; margin: 2em auto; display: block;">
+<img src="/assets/posts/modern-ai-primer/attention-weights.svg" alt="Attention weights: the token 'sat' assigns weights to all previous tokens. 'cat' gets the highest weight (0.62) because it's most relevant for predicting what follows." style="max-width: 460px; margin: 2em auto; display: block;">
 
 The model learns these weights from data. Nobody programs "pay attention to the subject noun" — it discovers that pattern because it helps predict the next word.
 
 Each layer's output is added back to its input via a [residual connection](#residual-connection) — a skip wire that gives information a direct highway through the network:
 
-<img src="/assets/residual-connection.svg" alt="Residual connection: the layer's input x is added to the layer's output, so output = layer(x) + x. Even if the layer learns nothing useful, x passes through unchanged." style="max-width: 440px; margin: 2em auto; display: block;">
+<img src="/assets/posts/modern-ai-primer/residual-connection.svg" alt="Residual connection: the layer's input x is added to the layer's output, so output = layer(x) + x. Even if the layer learns nothing useful, x passes through unchanged." style="max-width: 440px; margin: 2em auto; display: block;">
 
 Without residual connections, deep networks are nearly impossible to train. The gradient signal would decay to nothing before reaching the early layers — a problem called vanishing gradients. The skip connection gives gradients a direct highway back through the network, so every layer gets a useful learning signal regardless of depth.
 
 The full architecture stacks 12 of these layers, each with its own attention and MLP, each connected by residual skip wires:
 
-<img src="/assets/transformer-stack.svg" alt="Transformer architecture: 12 layers stacked, each containing an attention block and an MLP block, with residual skip connections around each layer." style="max-width: 400px; margin: 2em auto; display: block;">
+<img src="/assets/posts/modern-ai-primer/transformer-stack.svg" alt="Transformer architecture: 12 layers stacked, each containing an attention block and an MLP block, with residual skip connections around each layer." style="max-width: 400px; margin: 2em auto; display: block;">
 
 ## The rules
 

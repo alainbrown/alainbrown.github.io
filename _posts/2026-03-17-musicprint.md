@@ -15,7 +15,7 @@ On a corpus of 6,839 songs (Billboard Hot 100, 1920–2020s), frozen MERT achiev
 
 ## The compression pipeline
 
-<img src="/assets/musicprint-indexing.svg" alt="MusicPrint indexing pipeline" style="max-width: 420px; margin: 2em auto; display: block;">
+<img src="/assets/posts/musicprint/musicprint-indexing.svg" alt="MusicPrint indexing pipeline" style="max-width: 420px; margin: 2em auto; display: block;">
 
 A 3-minute song produces ~175 overlapping 5-second windows, each encoded as a 768-dim float vector. That's 632 KB per song — way too much for a phone database.
 
