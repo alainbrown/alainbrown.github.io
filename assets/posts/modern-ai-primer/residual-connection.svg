@@ -4,13 +4,16 @@
     circle.add { fill: #0f3460; stroke: #5390d9; stroke-width: 1.5; }
     text.title { fill: #e0e0e0; font-size: 12px; font-weight: 600; }
     text.detail { fill: #8888aa; font-size: 10px; }
-    text.label { fill: #6a6a8a; font-size: 10px; font-style: italic; }
+    text.label { fill: #8888aa; font-size: 10px; font-style: italic; }
     text.op { fill: #8ab4f8; font-size: 14px; font-weight: 700; }
     line.arrow { stroke: #5390d9; stroke-width: 1.5; }
     line.skip { stroke: #5390d9; stroke-width: 1.5; stroke-dasharray: 4,3; }
     polygon.arrow { fill: #5390d9; }
     text.code { fill: #8ab4f8; font-size: 11px; font-family: monospace; }
   </style>
+
+  <!-- Background -->
+  <rect width="440" height="160" fill="#111122" rx="12"/>
 
   <!-- Input x -->
   <text class="title" x="30" y="80" text-anchor="middle">x</text>

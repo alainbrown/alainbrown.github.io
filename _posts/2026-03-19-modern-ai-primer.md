@@ -68,7 +68,7 @@ Each layer contains two operations:
 
 Here's what attention looks like concretely. When the model processes "the cat sat on", the token "sat" needs to figure out which earlier tokens are relevant for predicting what comes next. It computes a weight for each previous token — how much to pay attention to it — then blends their representations together:
 
-<img src="/assets/posts/modern-ai-primer/attention-weights.svg" alt="Attention weights: the token 'sat' assigns weights to all previous tokens. 'cat' gets the highest weight (0.62) because it's most relevant for predicting what follows." style="max-width: 460px; margin: 2em auto; display: block;">
+<img src="/assets/posts/modern-ai-primer/attention-weights.svg" alt="Attention weights: the token 'sat' assigns weights to all previous tokens. 'cat' gets the highest weight (0.62) because it's most relevant for predicting what follows." style="max-width: 500px; margin: 2em auto; display: block;">
 
 The model learns these weights from data. Nobody programs "pay attention to the subject noun" — it discovers that pattern because it helps predict the next word.
 

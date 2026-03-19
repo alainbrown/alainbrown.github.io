@@ -7,10 +7,13 @@
     text.detail { fill: #8888aa; font-size: 9px; }
     line.arrow { stroke: #5390d9; stroke-width: 1.5; }
     polygon.arrow { fill: #5390d9; }
-    text.label { fill: #6a6a8a; font-size: 10px; font-style: italic; }
+    text.label { fill: #8888aa; font-size: 10px; font-style: italic; }
     path.loop { fill: none; stroke: #5390d9; stroke-width: 1.5; stroke-dasharray: 4,3; }
     text.count { fill: #8ab4f8; font-size: 10px; font-weight: 600; }
   </style>
+
+  <!-- Background -->
+  <rect width="520" height="200" fill="#111122" rx="12"/>
 
   <!-- Step 1: Forward -->
   <rect class="step" x="16" y="50" width="110" height="50"/>
