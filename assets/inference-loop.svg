@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 280" font-family="system-ui, -apple-system, sans-serif" font-size="13">
+  <style>
+    rect.token { fill: #1a1a2e; stroke: #3a3a5e; stroke-width: 1.5; rx: 6; }
+    rect.model { fill: #0f3460; stroke: #5390d9; stroke-width: 1.5; rx: 10; }
+    rect.prob { fill: #1a1a2e; stroke: #3a3a5e; stroke-width: 1; rx: 4; }
+    rect.prob-hi { fill: #1a1a2e; stroke: #5390d9; stroke-width: 1.5; rx: 4; }
+    rect.bar { fill: #3a3a5e; rx: 2; }
+    rect.bar-hi { fill: #5390d9; rx: 2; }
+    text.tok { fill: #e0e0e0; font-size: 12px; font-weight: 500; }
+    text.title { fill: #e0e0e0; font-weight: 600; font-size: 13px; }
+    text.detail { fill: #8888aa; font-size: 10px; }
+    text.prob-label { fill: #8888aa; font-size: 10px; }
+    text.prob-hi { fill: #8ab4f8; font-size: 10px; font-weight: 600; }
+    text.label { fill: #6a6a8a; font-size: 10px; font-style: italic; }
+    line.arrow { stroke: #5390d9; stroke-width: 1.5; }
+    polygon.arrow { fill: #5390d9; }
+    path.loop { fill: none; stroke: #5390d9; stroke-width: 1.5; stroke-dasharray: 4,3; }
+  </style>
+
+  <!-- Input tokens -->
+  <text class="label" x="20" y="46">input</text>
+
+  <rect class="token" x="58" y="30" width="48" height="28"/>
+  <text class="tok" x="82" y="48" text-anchor="middle">the</text>
+
+  <rect class="token" x="112" y="30" width="48" height="28"/>
+  <text class="tok" x="136" y="48" text-anchor="middle">cat</text>
+
+  <rect class="token" x="166" y="30" width="48" height="28"/>
+  <text class="tok" x="190" y="48" text-anchor="middle">sat</text>
+
+  <rect class="token" x="220" y="30" width="48" height="28"/>
+  <text class="tok" x="244" y="48" text-anchor="middle">on</text>
+
+  <!-- Arrow down to model -->
+  <line class="arrow" x1="168" y1="58" x2="168" y2="90"/>
+  <polygon class="arrow" points="163,86 168,96 173,86"/>
+
+  <!-- Transformer box -->
+  <rect class="model" x="78" y="100" width="180" height="50"/>
+  <text class="title" x="168" y="122" text-anchor="middle">Transformer</text>
+  <text class="detail" x="168" y="137" text-anchor="middle">12 layers × (attention + MLP)</text>
+
+  <!-- Arrow down to distribution -->
+  <line class="arrow" x1="168" y1="150" x2="168" y2="182"/>
+  <polygon class="arrow" points="163,178 168,188 173,178"/>
+
+  <!-- Probability distribution -->
+  <text class="label" x="70" y="200">next token</text>
+  <text class="label" x="70" y="211">probabilities</text>
+
+  <!-- Candidate: "the" -->
+  <rect class="prob" x="138" y="192" width="106" height="20"/>
+  <text class="prob-label" x="144" y="205">the</text>
+  <rect class="bar-hi" x="168" y="197" width="70" height="10"/>
+  <text class="prob-hi" x="244" y="206">72%</text>
+
+  <!-- Candidate: "a" -->
+  <rect class="prob" x="138" y="215" width="106" height="20"/>
+  <text class="prob-label" x="144" y="228">a</text>
+  <rect class="bar" x="168" y="220" width="28" height="10"/>
+  <text class="prob-label" x="244" y="229">14%</text>
+
+  <!-- Candidate: "his" -->
+  <rect class="prob" x="138" y="238" width="106" height="20"/>
+  <text class="prob-label" x="144" y="251">his</text>
+  <rect class="bar" x="168" y="243" width="14" height="10"/>
+  <text class="prob-label" x="244" y="252">6%</text>
+
+  <!-- Candidate: "..." -->
+  <text class="prob-label" x="168" y="270">...</text>
+
+  <!-- Arrow from selected token to output -->
+  <line class="arrow" x1="270" y1="202" x2="330" y2="202"/>
+  <polygon class="arrow" points="326,197 336,202 326,207"/>
+
+  <!-- Output: selected token -->
+  <rect class="token" x="340" y="188" width="48" height="28"/>
+  <text class="tok" x="364" y="206" text-anchor="middle">the</text>
+
+  <text class="label" x="396" y="206">← selected</text>
+
+  <!-- Loop arrow back to input -->
+  <path class="loop" d="M 364,188 L 364,14 L 280,14 L 280,30"/>
+  <polygon class="arrow" points="275,26 280,36 285,26"/>
+  <text class="label" x="330" y="10">append and repeat</text>
+</svg>

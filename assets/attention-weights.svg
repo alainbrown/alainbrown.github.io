@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 220" font-family="system-ui, -apple-system, sans-serif" font-size="13">
+  <style>
+    rect.cell { fill: #1a1a2e; stroke: #3a3a5e; stroke-width: 1; rx: 4; }
+    rect.cell-hi { fill: #0f3460; stroke: #5390d9; stroke-width: 1.5; rx: 4; }
+    rect.cell-med { fill: #162447; stroke: #3a5a8e; stroke-width: 1; rx: 4; }
+    rect.header { fill: none; }
+    text.tok { fill: #e0e0e0; font-size: 12px; font-weight: 500; }
+    text.weight { fill: #8888aa; font-size: 11px; }
+    text.weight-hi { fill: #8ab4f8; font-size: 11px; font-weight: 600; }
+    text.label { fill: #6a6a8a; font-size: 10px; font-style: italic; }
+    text.title { fill: #e0e0e0; font-size: 12px; font-weight: 600; }
+    text.detail { fill: #8888aa; font-size: 10px; }
+    line.arrow { stroke: #5390d9; stroke-width: 1.5; }
+    polygon.arrow { fill: #5390d9; }
+    rect.result { fill: #0f3460; stroke: #5390d9; stroke-width: 1.5; rx: 8; }
+  </style>
+
+  <!-- Title -->
+  <text class="label" x="20" y="20">query token: "sat"</text>
+  <text class="label" x="20" y="34">which previous tokens matter for predicting what comes next?</text>
+
+  <!-- Column headers (keys) -->
+  <text class="tok" x="130" y="62" text-anchor="middle">the</text>
+  <text class="tok" x="200" y="62" text-anchor="middle">cat</text>
+  <text class="tok" x="270" y="62" text-anchor="middle">sat</text>
+  <text class="tok" x="340" y="62" text-anchor="middle">on</text>
+
+  <!-- Row label -->
+  <text class="label" x="20" y="92">attention</text>
+  <text class="label" x="20" y="104">weights</text>
+
+  <!-- Weight cells -->
+  <rect class="cell-med" x="96" y="74" width="68" height="28"/>
+  <text class="weight" x="130" y="92" text-anchor="middle">0.15</text>
+
+  <rect class="cell-hi" x="166" y="74" width="68" height="28"/>
+  <text class="weight-hi" x="200" y="92" text-anchor="middle">0.62</text>
+
+  <rect class="cell" x="236" y="74" width="68" height="28"/>
+  <text class="weight" x="270" y="92" text-anchor="middle">0.08</text>
+
+  <rect class="cell-med" x="306" y="74" width="68" height="28"/>
+  <text class="weight" x="340" y="92" text-anchor="middle">0.15</text>
+
+  <!-- Arrow down -->
+  <line class="arrow" x1="218" y1="102" x2="218" y2="126"/>
+  <polygon class="arrow" points="213,122 218,132 223,122"/>
+
+  <!-- Result -->
+  <rect class="result" x="88" y="136" width="295" height="40"/>
+  <text class="title" x="235" y="154" text-anchor="middle">weighted mix of all token representations</text>
+  <text class="detail" x="235" y="168" text-anchor="middle">0.15 × repr("the") + 0.62 × repr("cat") + 0.08 × repr("sat") + 0.15 × repr("on")</text>
+
+  <!-- Annotation -->
+  <text class="label" x="88" y="196">"cat" gets the highest weight — it's most relevant to what follows "sat"</text>
+</svg>

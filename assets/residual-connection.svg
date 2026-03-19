@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 160" font-family="system-ui, -apple-system, sans-serif" font-size="13">
+  <style>
+    rect.box { fill: #1a1a2e; stroke: #3a3a5e; stroke-width: 1.5; rx: 8; }
+    circle.add { fill: #0f3460; stroke: #5390d9; stroke-width: 1.5; }
+    text.title { fill: #e0e0e0; font-size: 12px; font-weight: 600; }
+    text.detail { fill: #8888aa; font-size: 10px; }
+    text.label { fill: #6a6a8a; font-size: 10px; font-style: italic; }
+    text.op { fill: #8ab4f8; font-size: 14px; font-weight: 700; }
+    line.arrow { stroke: #5390d9; stroke-width: 1.5; }
+    line.skip { stroke: #5390d9; stroke-width: 1.5; stroke-dasharray: 4,3; }
+    polygon.arrow { fill: #5390d9; }
+    text.code { fill: #8ab4f8; font-size: 11px; font-family: monospace; }
+  </style>
+
+  <!-- Input x -->
+  <text class="title" x="30" y="80" text-anchor="middle">x</text>
+
+  <!-- Arrow to layer -->
+  <line class="arrow" x1="44" y1="76" x2="80" y2="76"/>
+  <polygon class="arrow" points="76,71 86,76 76,81"/>
+
+  <!-- Layer box -->
+  <rect class="box" x="90" y="54" width="140" height="44"/>
+  <text class="title" x="160" y="74" text-anchor="middle">Attention or MLP</text>
+  <text class="detail" x="160" y="89" text-anchor="middle">layer(x)</text>
+
+  <!-- Arrow from layer to add -->
+  <line class="arrow" x1="230" y1="76" x2="278" y2="76"/>
+  <polygon class="arrow" points="274,71 284,76 274,81"/>
+
+  <!-- Skip connection: x goes around the layer -->
+  <line class="skip" x1="44" y1="76" x2="44" y2="130"/>
+  <line class="skip" x1="44" y1="130" x2="290" y2="130"/>
+  <line class="skip" x1="290" y1="130" x2="290" y2="92"/>
+  <polygon class="arrow" points="285,96 290,86 295,96"/>
+
+  <!-- Skip label -->
+  <text class="label" x="167" y="144">skip connection (direct highway for x)</text>
+
+  <!-- Add circle -->
+  <circle class="add" cx="290" cy="76" r="14"/>
+  <text class="op" x="290" y="81" text-anchor="middle">+</text>
+
+  <!-- Arrow to output -->
+  <line class="arrow" x1="304" y1="76" x2="340" y2="76"/>
+  <polygon class="arrow" points="336,71 346,76 336,81"/>
+
+  <!-- Output -->
+  <text class="title" x="370" y="74" text-anchor="middle">output</text>
+  <text class="code" x="370" y="90" text-anchor="middle">layer(x) + x</text>
+
+  <!-- Top annotation -->
+  <text class="label" x="220" y="30">even if the layer learns nothing useful, x passes through unchanged</text>
+</svg>
