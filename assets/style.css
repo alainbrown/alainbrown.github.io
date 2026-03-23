@@ -365,6 +365,50 @@ body {
 .post-body img { max-width: 100%; border-radius: 10px; margin: 20px 0; }
 .post-body hr { border: none; border-top: 1px solid var(--border); margin: 36px 0; }
 
+/* --- Share links --- */
+.share-links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.share-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-right: 4px;
+}
+
+.share-links a,
+.share-links button {
+  color: var(--muted);
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 6px;
+  transition: color 0.15s;
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.share-links a:hover,
+.share-links button:hover {
+  color: var(--link);
+}
+
+.share-links svg { display: block; }
+
+.copy-link-btn.copied {
+  color: #16a34a;
+}
+
 /* --- Utility --- */
 .skip-link {
   position: absolute;
