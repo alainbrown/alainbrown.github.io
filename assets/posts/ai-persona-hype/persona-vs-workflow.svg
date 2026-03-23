@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 300" font-family="system-ui, -apple-system, sans-serif" font-size="13">
+  <style>
+    rect.box { fill: #1a1a2e; stroke: #3a3a5e; stroke-width: 1.5; rx: 6; }
+    rect.model { fill: #0f3460; stroke: #5390d9; stroke-width: 1.5; rx: 8; }
+    rect.result-bad { fill: #2a1a1a; stroke: #5e3a3a; stroke-width: 1.5; rx: 6; }
+    rect.result-good { fill: #1a2a1a; stroke: #3a5e3a; stroke-width: 1.5; rx: 6; }
+    rect.panel { fill: #0d0d1a; stroke: #2a2a4e; stroke-width: 1; rx: 10; }
+    text.title { fill: #e0e0e0; font-weight: 600; font-size: 13px; }
+    text.heading { fill: #8888aa; font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+    text.detail { fill: #8888aa; font-size: 11px; }
+    text.good { fill: #6abf69; font-size: 11px; font-weight: 500; }
+    text.bad { fill: #bf6a6a; font-size: 11px; font-weight: 500; }
+    text.neutral { fill: #8888aa; font-size: 11px; }
+    line.arrow { stroke: #5390d9; stroke-width: 1.5; }
+    polygon.arrow { fill: #5390d9; }
+    line.divider { stroke: #2a2a4e; stroke-width: 1; stroke-dasharray: 4,4; }
+  </style>
+
+  <!-- Background -->
+  <rect width="540" height="300" fill="#111122" rx="12"/>
+
+  <!-- Left panel: Role Prompting -->
+  <rect class="panel" x="16" y="16" width="244" height="268"/>
+  <text class="heading" x="138" y="40" text-anchor="middle">Role Prompting</text>
+
+  <!-- Prompt box -->
+  <rect class="box" x="38" y="54" width="200" height="36"/>
+  <text class="title" x="138" y="70" text-anchor="middle">"Act as senior engineer"</text>
+  <text class="detail" x="138" y="82" text-anchor="middle">persona assigned</text>
+
+  <!-- Arrow -->
+  <line class="arrow" x1="138" y1="90" x2="138" y2="112"/>
+  <polygon class="arrow" points="133,108 138,118 143,108"/>
+
+  <!-- Model box -->
+  <rect class="model" x="68" y="120" width="140" height="36"/>
+  <text class="title" x="138" y="142" text-anchor="middle">Model</text>
+
+  <!-- Arrow -->
+  <line class="arrow" x1="138" y1="156" x2="138" y2="178"/>
+  <polygon class="arrow" points="133,174 138,184 143,174"/>
+
+  <!-- Result -->
+  <rect class="result-bad" x="38" y="186" width="200" height="76"/>
+  <text class="neutral" x="138" y="208" text-anchor="middle">Tone changes</text>
+  <text class="bad" x="138" y="228" text-anchor="middle">Accuracy unchanged</text>
+  <text class="bad" x="138" y="248" text-anchor="middle">May degrade reasoning</text>
+
+  <!-- Divider -->
+  <line class="divider" x1="270" y1="30" x2="270" y2="270"/>
+
+  <!-- Right panel: Structured Workflow -->
+  <rect class="panel" x="280" y="16" width="244" height="268"/>
+  <text class="heading" x="402" y="40" text-anchor="middle">Structured Workflow</text>
+
+  <!-- Step 1 -->
+  <rect class="box" x="302" y="54" width="200" height="30"/>
+  <text class="detail" x="312" y="73">1.</text>
+  <text class="title" x="330" y="73">Generate solution</text>
+
+  <!-- Arrow -->
+  <line class="arrow" x1="402" y1="84" x2="402" y2="98"/>
+  <polygon class="arrow" points="397,94 402,104 407,94"/>
+
+  <!-- Step 2 -->
+  <rect class="box" x="302" y="106" width="200" height="30"/>
+  <text class="detail" x="312" y="125">2.</text>
+  <text class="title" x="330" y="125">Critique for errors</text>
+
+  <!-- Arrow -->
+  <line class="arrow" x1="402" y1="136" x2="402" y2="150"/>
+  <polygon class="arrow" points="397,146 402,156 407,146"/>
+
+  <!-- Step 3 -->
+  <rect class="box" x="302" y="158" width="200" height="30"/>
+  <text class="detail" x="312" y="177">3.</text>
+  <text class="title" x="330" y="177">Refine result</text>
+
+  <!-- Arrow -->
+  <line class="arrow" x1="402" y1="188" x2="402" y2="202"/>
+  <polygon class="arrow" points="397,198 402,208 407,198"/>
+
+  <!-- Result -->
+  <rect class="result-good" x="302" y="210" width="200" height="56"/>
+  <text class="good" x="402" y="232" text-anchor="middle">Better accuracy</text>
+  <text class="good" x="402" y="252" text-anchor="middle">Fewer single-pass errors</text>
+</svg>
