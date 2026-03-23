@@ -23,14 +23,17 @@ description: "Software engineer building AI systems. Previously at Google and Li
 <div class="section">
   <h2 class="section-title">Projects</h2>
   <div class="project-grid">
+    <a href="https://github.com/alainbrown/skills">
+      <img src="https://opengraph.githubassets.com/1/alainbrown/skills" alt="skills - Agent skills that replace standalone apps" />
+    </a>
     <a href="https://github.com/alainbrown/musicprint">
-      <img src="https://opengraph.githubassets.com/1/alainbrown/musicprint" alt="MusicPrint — offline song identification using compressed audio embeddings" loading="lazy" />
+      <img src="https://opengraph.githubassets.com/1/alainbrown/musicprint" alt="MusicPrint — offline song identification using compressed audio embeddings" />
     </a>
     <a href="https://github.com/alainbrown/stack-agent">
-      <img src="https://opengraph.githubassets.com/1/alainbrown/stack-agent" alt="stack-agent — AI-powered CLI for scaffolding full-stack applications" loading="lazy" />
+      <img src="https://opengraph.githubassets.com/1/alainbrown/stack-agent" alt="stack-agent — AI-powered CLI for scaffolding full-stack applications" />
     </a>
     <a href="https://github.com/containerfy/containerfy">
-      <img src="https://opengraph.githubassets.com/1/containerfy/containerfy" alt="containerfy — automatically containerize applications" loading="lazy" />
+      <img src="https://opengraph.githubassets.com/1/containerfy/containerfy" alt="containerfy — automatically containerize applications" />
     </a>
   </div>
 </div>
