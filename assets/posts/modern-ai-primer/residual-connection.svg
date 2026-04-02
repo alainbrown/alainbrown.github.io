@@ -1,19 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 160" font-family="system-ui, -apple-system, sans-serif" font-size="13">
   <style>
-    rect.box { fill: #1a1a2e; stroke: #3a3a5e; stroke-width: 1.5; rx: 8; }
-    circle.add { fill: #0f3460; stroke: #5390d9; stroke-width: 1.5; }
-    text.title { fill: #e0e0e0; font-size: 12px; font-weight: 600; }
-    text.detail { fill: #8888aa; font-size: 10px; }
-    text.label { fill: #8888aa; font-size: 10px; font-style: italic; }
-    text.op { fill: #8ab4f8; font-size: 14px; font-weight: 700; }
-    line.arrow { stroke: #5390d9; stroke-width: 1.5; }
-    line.skip { stroke: #5390d9; stroke-width: 1.5; stroke-dasharray: 4,3; }
-    polygon.arrow { fill: #5390d9; }
-    text.code { fill: #8ab4f8; font-size: 11px; font-family: monospace; }
+    rect.box { fill: #eef1fa; stroke: #b0b8d8; stroke-width: 1.5; rx: 8; }
+    circle.add { fill: #dce8ff; stroke: #4080d0; stroke-width: 1.5; }
+    text.title { fill: #1a1a2e; font-size: 12px; font-weight: 600; }
+    text.detail { fill: #5a5a7a; font-size: 10px; }
+    text.label { fill: #5a5a7a; font-size: 10px; font-style: italic; }
+    text.op { fill: #2a60c0; font-size: 14px; font-weight: 700; }
+    line.arrow { stroke: #4080d0; stroke-width: 1.5; }
+    line.skip { stroke: #4080d0; stroke-width: 1.5; stroke-dasharray: 4,3; }
+    polygon.arrow { fill: #4080d0; }
+    text.code { fill: #2a60c0; font-size: 11px; font-family: monospace; }
   </style>
 
   <!-- Background -->
-  <rect width="440" height="160" fill="#111122" rx="12"/>
+  <rect width="440" height="160" fill="#f8f9fc" rx="12"/>
 
   <!-- Input x -->
   <text class="title" x="30" y="80" text-anchor="middle">x</text>

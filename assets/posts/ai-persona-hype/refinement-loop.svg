@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 180" font-family="system-ui, -apple-system, sans-serif" font-size="13">
   <style>
-    rect.step { fill: #1a1a2e; stroke: #3a3a5e; stroke-width: 1.5; rx: 8; }
-    rect.step-accent { fill: #0f3460; stroke: #5390d9; stroke-width: 1.5; rx: 8; }
-    text.title { fill: #e0e0e0; font-weight: 600; font-size: 13px; }
-    text.detail { fill: #8888aa; font-size: 10px; }
-    text.label { fill: #8888aa; font-size: 10px; font-style: italic; }
-    line.arrow { stroke: #5390d9; stroke-width: 1.5; }
-    polygon.arrow { fill: #5390d9; }
-    path.loop { fill: none; stroke: #5390d9; stroke-width: 1.5; stroke-dasharray: 5,3; }
+    rect.step { fill: #eef1fa; stroke: #b0b8d8; stroke-width: 1.5; rx: 8; }
+    rect.step-accent { fill: #dce8ff; stroke: #4080d0; stroke-width: 1.5; rx: 8; }
+    text.title { fill: #1a1a2e; font-weight: 600; font-size: 13px; }
+    text.detail { fill: #5a5a7a; font-size: 10px; }
+    text.label { fill: #5a5a7a; font-size: 10px; font-style: italic; }
+    line.arrow { stroke: #4080d0; stroke-width: 1.5; }
+    polygon.arrow { fill: #4080d0; }
+    path.loop { fill: none; stroke: #4080d0; stroke-width: 1.5; stroke-dasharray: 5,3; }
   </style>
 
   <!-- Background -->
-  <rect width="460" height="180" fill="#111122" rx="12"/>
+  <rect width="460" height="180" fill="#f8f9fc" rx="12"/>
 
   <!-- Step 1: Generate -->
   <rect class="step" x="24" y="40" width="120" height="50"/>
@@ -34,7 +34,7 @@
   <!-- Step 3: Refine -->
   <rect class="step-accent" x="328" y="40" width="108" height="50"/>
   <text class="title" x="382" y="62" text-anchor="middle">Refine</text>
-  <text class="detail" x="382" y="78" text-anchor="middle" fill="#8ab4f8">improved output</text>
+  <text class="detail" x="382" y="78" text-anchor="middle" fill="#2a60c0">improved output</text>
 
   <!-- Loop arrow back from Refine to Generate -->
   <path class="loop" d="M 382,90 L 382,130 L 84,130 L 84,90"/>

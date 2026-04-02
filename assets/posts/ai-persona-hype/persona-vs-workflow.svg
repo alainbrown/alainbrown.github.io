@@ -1,23 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 300" font-family="system-ui, -apple-system, sans-serif" font-size="13">
   <style>
-    rect.box { fill: #1a1a2e; stroke: #3a3a5e; stroke-width: 1.5; rx: 6; }
-    rect.model { fill: #0f3460; stroke: #5390d9; stroke-width: 1.5; rx: 8; }
-    rect.result-bad { fill: #2a1a1a; stroke: #5e3a3a; stroke-width: 1.5; rx: 6; }
-    rect.result-good { fill: #1a2a1a; stroke: #3a5e3a; stroke-width: 1.5; rx: 6; }
-    rect.panel { fill: #0d0d1a; stroke: #2a2a4e; stroke-width: 1; rx: 10; }
-    text.title { fill: #e0e0e0; font-weight: 600; font-size: 13px; }
-    text.heading { fill: #8888aa; font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
-    text.detail { fill: #8888aa; font-size: 11px; }
-    text.good { fill: #6abf69; font-size: 11px; font-weight: 500; }
-    text.bad { fill: #bf6a6a; font-size: 11px; font-weight: 500; }
-    text.neutral { fill: #8888aa; font-size: 11px; }
-    line.arrow { stroke: #5390d9; stroke-width: 1.5; }
-    polygon.arrow { fill: #5390d9; }
-    line.divider { stroke: #2a2a4e; stroke-width: 1; stroke-dasharray: 4,4; }
+    rect.box { fill: #eef1fa; stroke: #b0b8d8; stroke-width: 1.5; rx: 6; }
+    rect.model { fill: #dce8ff; stroke: #4080d0; stroke-width: 1.5; rx: 8; }
+    rect.result-bad { fill: #fde8e8; stroke: #c05050; stroke-width: 1.5; rx: 6; }
+    rect.result-good { fill: #e8fde8; stroke: #4a8a4a; stroke-width: 1.5; rx: 6; }
+    rect.panel { fill: #f0f2f8; stroke: #c0c4d8; stroke-width: 1; rx: 10; }
+    text.title { fill: #1a1a2e; font-weight: 600; font-size: 13px; }
+    text.heading { fill: #5a5a7a; font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+    text.detail { fill: #5a5a7a; font-size: 11px; }
+    text.good { fill: #3a9a3a; font-size: 11px; font-weight: 500; }
+    text.bad { fill: #c04040; font-size: 11px; font-weight: 500; }
+    text.neutral { fill: #5a5a7a; font-size: 11px; }
+    line.arrow { stroke: #4080d0; stroke-width: 1.5; }
+    polygon.arrow { fill: #4080d0; }
+    line.divider { stroke: #c0c4d8; stroke-width: 1; stroke-dasharray: 4,4; }
   </style>
 
   <!-- Background -->
-  <rect width="540" height="300" fill="#111122" rx="12"/>
+  <rect width="540" height="300" fill="#f8f9fc" rx="12"/>
 
   <!-- Left panel: Role Prompting -->
   <rect class="panel" x="16" y="16" width="244" height="268"/>

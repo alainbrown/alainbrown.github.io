@@ -1,21 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 260" font-family="system-ui, -apple-system, sans-serif" font-size="13">
   <style>
-    text.label { fill: #8888aa; font-size: 10px; font-style: italic; }
-    text.title { fill: #e0e0e0; font-size: 11px; font-weight: 600; }
-    text.detail { fill: #8888aa; font-size: 10px; }
-    text.step-label { fill: #8ab4f8; font-size: 9px; font-weight: 500; }
-    path.surface { fill: none; stroke: #4a4a6e; stroke-width: 1.5; }
-    circle.point { fill: #5390d9; }
-    circle.point-start { fill: #7c3aed; }
+    text.label { fill: #5a5a7a; font-size: 10px; font-style: italic; }
+    text.title { fill: #1a1a2e; font-size: 11px; font-weight: 600; }
+    text.detail { fill: #5a5a7a; font-size: 10px; }
+    text.step-label { fill: #2a60c0; font-size: 9px; font-weight: 500; }
+    path.surface { fill: none; stroke: #9090b0; stroke-width: 1.5; }
+    circle.point { fill: #4080d0; }
+    circle.point-start { fill: #6a30d0; }
     circle.point-end { fill: #22c55e; }
-    line.step { stroke: #5390d9; stroke-width: 1; stroke-dasharray: 2,2; }
+    line.step { stroke: #4080d0; stroke-width: 1; stroke-dasharray: 2,2; }
     line.grad { stroke: #ef4444; stroke-width: 1.5; }
-    line.axis { stroke: #4a4a6e; stroke-width: 1; }
-    text.axis-label { fill: #8888aa; font-size: 10px; }
+    line.axis { stroke: #9090b0; stroke-width: 1; }
+    text.axis-label { fill: #5a5a7a; font-size: 10px; }
   </style>
 
   <!-- Background -->
-  <rect width="460" height="260" fill="#111122" rx="12"/>
+  <rect width="460" height="260" fill="#f8f9fc" rx="12"/>
 
   <!-- Axes -->
   <line class="axis" x1="40" y1="210" x2="420" y2="210"/>

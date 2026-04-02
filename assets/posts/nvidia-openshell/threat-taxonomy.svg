@@ -1,45 +1,45 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 240" font-family="system-ui, -apple-system, sans-serif" font-size="13">
 
   <!-- Background -->
-  <rect width="540" height="240" fill="#111122" rx="12"/>
+  <rect width="540" height="240" fill="#f8f9fc" rx="12"/>
 
   <!-- Left panel: Structural Threats -->
-  <rect x="16" y="16" width="244" height="208" fill="#0d0d1a" stroke="#2a2a4e" stroke-width="1" rx="10"/>
-  <text x="138" y="41" text-anchor="middle" fill="#8888aa" font-size="11" font-weight="600" letter-spacing="1">STRUCTURAL THREATS</text>
-  <text x="138" y="57" text-anchor="middle" fill="#6abf69" font-size="10" font-weight="500">Addressed by OpenShell</text>
-  <line x1="30" y1="65" x2="246" y2="65" stroke="#2a2a4e" stroke-width="1"/>
+  <rect x="16" y="16" width="244" height="208" fill="#f0f2f8" stroke="#c0c4d8" stroke-width="1" rx="10"/>
+  <text x="138" y="41" text-anchor="middle" fill="#5a5a7a" font-size="11" font-weight="600" letter-spacing="1">STRUCTURAL THREATS</text>
+  <text x="138" y="57" text-anchor="middle" fill="#3a9a3a" font-size="10" font-weight="500">Addressed by OpenShell</text>
+  <line x1="30" y1="65" x2="246" y2="65" stroke="#c0c4d8" stroke-width="1"/>
 
-  <text x="40" y="93" fill="#6abf69" font-size="13">✓</text>
-  <text x="60" y="93" fill="#e0e0e0" font-size="12">Unauthorized file access</text>
+  <text x="40" y="93" fill="#3a9a3a" font-size="13">✓</text>
+  <text x="60" y="93" fill="#1a1a2e" font-size="12">Unauthorized file access</text>
 
-  <text x="40" y="121" fill="#6abf69" font-size="13">✓</text>
-  <text x="60" y="121" fill="#e0e0e0" font-size="12">Network exfiltration</text>
+  <text x="40" y="121" fill="#3a9a3a" font-size="13">✓</text>
+  <text x="60" y="121" fill="#1a1a2e" font-size="12">Network exfiltration</text>
 
-  <text x="40" y="149" fill="#6abf69" font-size="13">✓</text>
-  <text x="60" y="149" fill="#e0e0e0" font-size="12">Process escalation</text>
+  <text x="40" y="149" fill="#3a9a3a" font-size="13">✓</text>
+  <text x="60" y="149" fill="#1a1a2e" font-size="12">Process escalation</text>
 
-  <text x="40" y="177" fill="#6abf69" font-size="13">✓</text>
-  <text x="60" y="177" fill="#e0e0e0" font-size="12">Resource exhaustion</text>
+  <text x="40" y="177" fill="#3a9a3a" font-size="13">✓</text>
+  <text x="60" y="177" fill="#1a1a2e" font-size="12">Resource exhaustion</text>
 
   <!-- Divider -->
-  <line x1="270" y1="30" x2="270" y2="210" stroke="#2a2a4e" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="270" y1="30" x2="270" y2="210" stroke="#c0c4d8" stroke-width="1" stroke-dasharray="4,4"/>
 
   <!-- Right panel: Semantic Threats -->
-  <rect x="280" y="16" width="244" height="208" fill="#0d0d1a" stroke="#2a2a4e" stroke-width="1" rx="10"/>
-  <text x="402" y="41" text-anchor="middle" fill="#8888aa" font-size="11" font-weight="600" letter-spacing="1">SEMANTIC THREATS</text>
-  <text x="402" y="57" text-anchor="middle" fill="#bf6a6a" font-size="10" font-weight="500">Not addressed</text>
-  <line x1="294" y1="65" x2="510" y2="65" stroke="#2a2a4e" stroke-width="1"/>
+  <rect x="280" y="16" width="244" height="208" fill="#f0f2f8" stroke="#c0c4d8" stroke-width="1" rx="10"/>
+  <text x="402" y="41" text-anchor="middle" fill="#5a5a7a" font-size="11" font-weight="600" letter-spacing="1">SEMANTIC THREATS</text>
+  <text x="402" y="57" text-anchor="middle" fill="#c04040" font-size="10" font-weight="500">Not addressed</text>
+  <line x1="294" y1="65" x2="510" y2="65" stroke="#c0c4d8" stroke-width="1"/>
 
-  <text x="304" y="93" fill="#bf6a6a" font-size="13">✗</text>
-  <text x="324" y="93" fill="#e0e0e0" font-size="12">Prompt injection</text>
+  <text x="304" y="93" fill="#c04040" font-size="13">✗</text>
+  <text x="324" y="93" fill="#1a1a2e" font-size="12">Prompt injection</text>
 
-  <text x="304" y="121" fill="#bf6a6a" font-size="13">✗</text>
-  <text x="324" y="121" fill="#e0e0e0" font-size="12">Allowed-channel exfiltration</text>
+  <text x="304" y="121" fill="#c04040" font-size="13">✗</text>
+  <text x="324" y="121" fill="#1a1a2e" font-size="12">Allowed-channel exfiltration</text>
 
-  <text x="304" y="149" fill="#bf6a6a" font-size="13">✗</text>
-  <text x="324" y="149" fill="#e0e0e0" font-size="12">Tool misuse</text>
+  <text x="304" y="149" fill="#c04040" font-size="13">✗</text>
+  <text x="324" y="149" fill="#1a1a2e" font-size="12">Tool misuse</text>
 
-  <text x="304" y="177" fill="#bf6a6a" font-size="13">✗</text>
-  <text x="324" y="177" fill="#e0e0e0" font-size="12">Instruction hijacking</text>
+  <text x="304" y="177" fill="#c04040" font-size="13">✗</text>
+  <text x="324" y="177" fill="#1a1a2e" font-size="12">Instruction hijacking</text>
 
 </svg>

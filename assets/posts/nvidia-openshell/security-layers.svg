@@ -1,30 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 200" font-family="system-ui, -apple-system, sans-serif">
 
   <!-- Background -->
-  <rect width="520" height="200" fill="#111122" rx="12"/>
+  <rect width="520" height="200" fill="#f8f9fc" rx="12"/>
 
   <!-- Layer 3: Intelligent Filtering (gap) -->
-  <rect x="20" y="16" width="480" height="48" fill="#141420" stroke="#333355" stroke-width="1.5" rx="8" stroke-dasharray="5,3"/>
-  <text x="36" y="35" fill="#505075" font-size="12" font-weight="600">Intelligent Filtering</text>
-  <text x="36" y="52" fill="#3a3a5a" font-size="10">semantic analysis · intent evaluation · risk scoring</text>
-  <rect x="426" y="22" width="60" height="20" fill="#2a1a1a" stroke="#5e3a3a" stroke-width="1" rx="4"/>
-  <text x="456" y="35" text-anchor="middle" fill="#bf6a6a" font-size="10" font-weight="600">NEEDED</text>
+  <rect x="20" y="16" width="480" height="48" fill="#f5f5fc" stroke="#b0b4d0" stroke-width="1.5" rx="8" stroke-dasharray="5,3"/>
+  <text x="36" y="35" fill="#404070" font-size="12" font-weight="600">Intelligent Filtering</text>
+  <text x="36" y="52" fill="#5a5a7a" font-size="10">semantic analysis · intent evaluation · risk scoring</text>
+  <rect x="426" y="22" width="60" height="20" fill="#fde8e8" stroke="#c05050" stroke-width="1" rx="4"/>
+  <text x="456" y="35" text-anchor="middle" fill="#c04040" font-size="10" font-weight="600">NEEDED</text>
 
   <!-- Layer 2: Behavioral Monitoring (gap) -->
-  <rect x="20" y="74" width="480" height="48" fill="#141420" stroke="#333355" stroke-width="1.5" rx="8" stroke-dasharray="5,3"/>
-  <text x="36" y="93" fill="#505075" font-size="12" font-weight="600">Behavioral Monitoring</text>
-  <text x="36" y="110" fill="#3a3a5a" font-size="10">anomaly detection · pattern analysis · adaptive policy</text>
-  <rect x="426" y="80" width="60" height="20" fill="#2a1a1a" stroke="#5e3a3a" stroke-width="1" rx="4"/>
-  <text x="456" y="93" text-anchor="middle" fill="#bf6a6a" font-size="10" font-weight="600">NEEDED</text>
+  <rect x="20" y="74" width="480" height="48" fill="#f5f5fc" stroke="#b0b4d0" stroke-width="1.5" rx="8" stroke-dasharray="5,3"/>
+  <text x="36" y="93" fill="#404070" font-size="12" font-weight="600">Behavioral Monitoring</text>
+  <text x="36" y="110" fill="#5a5a7a" font-size="10">anomaly detection · pattern analysis · adaptive policy</text>
+  <rect x="426" y="80" width="60" height="20" fill="#fde8e8" stroke="#c05050" stroke-width="1" rx="4"/>
+  <text x="456" y="93" text-anchor="middle" fill="#c04040" font-size="10" font-weight="600">NEEDED</text>
 
   <!-- Layer 1: Hard Boundaries (OpenShell — covered) -->
-  <rect x="20" y="132" width="480" height="48" fill="#0f3460" stroke="#5390d9" stroke-width="1.5" rx="8"/>
-  <text x="36" y="151" fill="#e0e0e0" font-size="12" font-weight="600">Hard Boundaries</text>
-  <text x="36" y="168" fill="#7aacf8" font-size="10">filesystem · network · process isolation · resource limits</text>
-  <rect x="416" y="138" width="72" height="20" fill="#1a2a1a" stroke="#3a5e3a" stroke-width="1" rx="4"/>
-  <text x="452" y="151" text-anchor="middle" fill="#6abf69" font-size="10" font-weight="600">OpenShell ✓</text>
+  <rect x="20" y="132" width="480" height="48" fill="#dce8ff" stroke="#4080d0" stroke-width="1.5" rx="8"/>
+  <text x="36" y="151" fill="#1a1a2e" font-size="12" font-weight="600">Hard Boundaries</text>
+  <text x="36" y="168" fill="#2a60a0" font-size="10">filesystem · network · process isolation · resource limits</text>
+  <rect x="416" y="138" width="72" height="20" fill="#e8fde8" stroke="#4a8a4a" stroke-width="1" rx="4"/>
+  <text x="452" y="151" text-anchor="middle" fill="#3a9a3a" font-size="10" font-weight="600">OpenShell ✓</text>
 
   <!-- Footer -->
-  <text x="260" y="194" text-anchor="middle" fill="#2a2a4a" font-size="9" letter-spacing="2" font-weight="600">AGENT RUNTIME</text>
+  <text x="260" y="194" text-anchor="middle" fill="#a0a0c0" font-size="9" letter-spacing="2" font-weight="600">AGENT RUNTIME</text>
 
 </svg>

@@ -1,21 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 230" font-family="system-ui, -apple-system, sans-serif" font-size="13">
   <style>
-    rect.cell { fill: #1a1a2e; stroke: #3a3a5e; stroke-width: 1; rx: 4; }
-    rect.cell-hi { fill: #0f3460; stroke: #5390d9; stroke-width: 1.5; rx: 4; }
-    rect.cell-med { fill: #162447; stroke: #3a5a8e; stroke-width: 1; rx: 4; }
-    text.tok { fill: #e0e0e0; font-size: 12px; font-weight: 500; }
-    text.weight { fill: #8888aa; font-size: 11px; }
-    text.weight-hi { fill: #8ab4f8; font-size: 11px; font-weight: 600; }
-    text.label { fill: #8888aa; font-size: 10px; font-style: italic; }
-    text.title { fill: #e0e0e0; font-size: 12px; font-weight: 600; }
-    text.detail { fill: #8888aa; font-size: 9.5px; }
-    line.arrow { stroke: #5390d9; stroke-width: 1.5; }
-    polygon.arrow { fill: #5390d9; }
-    rect.result { fill: #0f3460; stroke: #5390d9; stroke-width: 1.5; rx: 8; }
+    rect.cell { fill: #eef1fa; stroke: #b0b8d8; stroke-width: 1; rx: 4; }
+    rect.cell-hi { fill: #dce8ff; stroke: #4080d0; stroke-width: 1.5; rx: 4; }
+    rect.cell-med { fill: #dce8f5; stroke: #7090c0; stroke-width: 1; rx: 4; }
+    text.tok { fill: #1a1a2e; font-size: 12px; font-weight: 500; }
+    text.weight { fill: #5a5a7a; font-size: 11px; }
+    text.weight-hi { fill: #2a60c0; font-size: 11px; font-weight: 600; }
+    text.label { fill: #5a5a7a; font-size: 10px; font-style: italic; }
+    text.title { fill: #1a1a2e; font-size: 12px; font-weight: 600; }
+    text.detail { fill: #5a5a7a; font-size: 9.5px; }
+    line.arrow { stroke: #4080d0; stroke-width: 1.5; }
+    polygon.arrow { fill: #4080d0; }
+    rect.result { fill: #dce8ff; stroke: #4080d0; stroke-width: 1.5; rx: 8; }
   </style>
 
   <!-- Background -->
-  <rect width="500" height="230" fill="#111122" rx="12"/>
+  <rect width="500" height="230" fill="#f8f9fc" rx="12"/>
 
   <!-- Title -->
   <text class="label" x="24" y="28">query token: "sat"</text>

@@ -1,22 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 420" font-family="system-ui, -apple-system, sans-serif" font-size="13">
   <style>
-    rect.layer { fill: #1a1a2e; stroke: #3a3a5e; stroke-width: 1.5; rx: 8; }
-    rect.attn { fill: #162447; stroke: #5390d9; stroke-width: 1; rx: 6; }
-    rect.mlp { fill: #2d1b3d; stroke: #7c3aed; stroke-width: 1; rx: 6; }
-    rect.embed { fill: #0f3460; stroke: #5390d9; stroke-width: 1.5; rx: 8; }
-    text.title { fill: #e0e0e0; font-size: 11px; font-weight: 600; }
-    text.detail { fill: #8888aa; font-size: 10px; }
-    text.label { fill: #8888aa; font-size: 10px; font-style: italic; }
-    text.layer-num { fill: #8888aa; font-size: 10px; font-weight: 500; }
-    line.arrow { stroke: #5390d9; stroke-width: 1.5; }
-    line.skip { stroke: #3a5a8e; stroke-width: 1; stroke-dasharray: 3,3; }
-    polygon.arrow { fill: #5390d9; }
-    text.skip-label { fill: #5390d9; font-size: 9px; font-style: italic; }
-    text.dots { fill: #8888aa; font-size: 16px; }
+    rect.layer { fill: #eef1fa; stroke: #b0b8d8; stroke-width: 1.5; rx: 8; }
+    rect.attn { fill: #dce8f5; stroke: #4080d0; stroke-width: 1; rx: 6; }
+    rect.mlp { fill: #ede8f8; stroke: #6a30d0; stroke-width: 1; rx: 6; }
+    rect.embed { fill: #dce8ff; stroke: #4080d0; stroke-width: 1.5; rx: 8; }
+    text.title { fill: #1a1a2e; font-size: 11px; font-weight: 600; }
+    text.detail { fill: #5a5a7a; font-size: 10px; }
+    text.label { fill: #5a5a7a; font-size: 10px; font-style: italic; }
+    text.layer-num { fill: #5a5a7a; font-size: 10px; font-weight: 500; }
+    line.arrow { stroke: #4080d0; stroke-width: 1.5; }
+    line.skip { stroke: #7090c0; stroke-width: 1; stroke-dasharray: 3,3; }
+    polygon.arrow { fill: #4080d0; }
+    text.skip-label { fill: #4080d0; font-size: 9px; font-style: italic; }
+    text.dots { fill: #5a5a7a; font-size: 16px; }
   </style>
 
   <!-- Background -->
-  <rect width="400" height="420" fill="#111122" rx="12"/>
+  <rect width="400" height="420" fill="#f8f9fc" rx="12"/>
 
   <!-- Input -->
   <rect class="embed" x="100" y="10" width="200" height="36"/>

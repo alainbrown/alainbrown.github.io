@@ -1,19 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 200" font-family="system-ui, -apple-system, sans-serif" font-size="13">
   <style>
-    rect.step { fill: #1a1a2e; stroke: #3a3a5e; stroke-width: 1.5; rx: 8; }
-    rect.step-loss { fill: #2d1b3d; stroke: #7c3aed; stroke-width: 1.5; rx: 8; }
-    rect.step-update { fill: #0f3460; stroke: #5390d9; stroke-width: 1.5; rx: 8; }
-    text.title { fill: #e0e0e0; font-size: 11px; font-weight: 600; }
-    text.detail { fill: #8888aa; font-size: 9px; }
-    line.arrow { stroke: #5390d9; stroke-width: 1.5; }
-    polygon.arrow { fill: #5390d9; }
-    text.label { fill: #8888aa; font-size: 10px; font-style: italic; }
-    path.loop { fill: none; stroke: #5390d9; stroke-width: 1.5; stroke-dasharray: 4,3; }
-    text.count { fill: #8ab4f8; font-size: 10px; font-weight: 600; }
+    rect.step { fill: #eef1fa; stroke: #b0b8d8; stroke-width: 1.5; rx: 8; }
+    rect.step-loss { fill: #ede8f8; stroke: #6a30d0; stroke-width: 1.5; rx: 8; }
+    rect.step-update { fill: #dce8ff; stroke: #4080d0; stroke-width: 1.5; rx: 8; }
+    text.title { fill: #1a1a2e; font-size: 11px; font-weight: 600; }
+    text.detail { fill: #5a5a7a; font-size: 9px; }
+    line.arrow { stroke: #4080d0; stroke-width: 1.5; }
+    polygon.arrow { fill: #4080d0; }
+    text.label { fill: #5a5a7a; font-size: 10px; font-style: italic; }
+    path.loop { fill: none; stroke: #4080d0; stroke-width: 1.5; stroke-dasharray: 4,3; }
+    text.count { fill: #2a60c0; font-size: 10px; font-weight: 600; }
   </style>
 
   <!-- Background -->
-  <rect width="520" height="200" fill="#111122" rx="12"/>
+  <rect width="520" height="200" fill="#f8f9fc" rx="12"/>
 
   <!-- Step 1: Forward -->
   <rect class="step" x="16" y="50" width="110" height="50"/>
