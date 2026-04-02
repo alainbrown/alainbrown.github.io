@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 210" font-family="system-ui, -apple-system, sans-serif" font-size="13">
+
+  <!-- Background -->
+  <rect width="540" height="210" fill="#f8f9fc" rx="12"/>
+
+  <!-- OpenShell (outermost) -->
+  <rect x="16" y="16" width="508" height="178" fill="#dce8ff" stroke="#4080d0" stroke-width="1.5" rx="10"/>
+  <text x="32" y="38" fill="#1a3a6a" font-size="13" font-weight="700">OpenShell</text>
+  <text x="130" y="38" fill="#2a60a0" font-size="10" font-style="italic">security runtime</text>
+  <text x="32" y="53" fill="#4060a0" font-size="10">Landlock · seccomp · netns · filesystem · network · process controls</text>
+
+  <!-- NemoClaw (middle) -->
+  <rect x="36" y="62" width="468" height="116" fill="#ede8ff" stroke="#7060c0" stroke-width="1.5" rx="8"/>
+  <text x="52" y="82" fill="#3a1a6a" font-size="13" font-weight="700">NemoClaw</text>
+  <text x="148" y="82" fill="#5040a0" font-size="10" font-style="italic">integration layer</text>
+  <text x="52" y="97" fill="#6050b0" font-size="10">managed inference · hardened blueprint · network policies</text>
+
+  <!-- OpenClaw (innermost) -->
+  <rect x="56" y="106" width="428" height="60" fill="#f0f2f8" stroke="#c0c4d8" stroke-width="1.5" rx="8"/>
+  <text x="72" y="126" fill="#1a1a2e" font-size="13" font-weight="700">OpenClaw</text>
+  <text x="152" y="126" fill="#5a5a7a" font-size="10" font-style="italic">AI assistant</text>
+  <text x="72" y="142" fill="#5a5a7a" font-size="10">multi-channel · multi-agent routing</text>
+  <rect x="318" y="113" width="152" height="18" fill="#fff3e0" stroke="#c07040" stroke-width="1" rx="4"/>
+  <text x="394" y="125" text-anchor="middle" fill="#a05020" font-size="9" font-weight="600">sessions_spawn allowlisted ⚠</text>
+
+  <!-- Footer -->
+  <text x="270" y="204" text-anchor="middle" fill="#a0a0c0" font-size="9" letter-spacing="2" font-weight="600">NVIDIA NEMOCLAW STACK</text>
+
+</svg>

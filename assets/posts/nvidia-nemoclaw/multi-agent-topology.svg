@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 260" font-family="system-ui, -apple-system, sans-serif" font-size="13">
+
+  <!-- Background -->
+  <rect width="540" height="260" fill="#f8f9fc" rx="12"/>
+
+  <!-- === LEFT PANEL: PROBLEM === -->
+  <rect x="16" y="16" width="244" height="228" fill="#f0f2f8" stroke="#c0c4d8" stroke-width="1" rx="10"/>
+  <text x="138" y="37" text-anchor="middle" fill="#5a5a7a" font-size="11" font-weight="600" letter-spacing="1">NEMOCLAW MODEL</text>
+  <rect x="79" y="43" width="118" height="18" fill="#fde8e8" stroke="#c05050" stroke-width="1" rx="4"/>
+  <text x="138" y="55" text-anchor="middle" fill="#c04040" font-size="10" font-weight="600">STRUCTURAL GAP</text>
+
+  <!-- Box 1: Agent in sandbox -->
+  <rect x="32" y="66" width="212" height="44" fill="#dce8ff" stroke="#4080d0" stroke-width="1.5" rx="6"/>
+  <text x="138" y="84" text-anchor="middle" fill="#1a1a2e" font-size="12" font-weight="600">Orchestrator Agent</text>
+  <text x="138" y="99" text-anchor="middle" fill="#2a60a0" font-size="10">inside sandbox</text>
+
+  <!-- Arrow 1 -->
+  <line x1="138" y1="110" x2="138" y2="128" stroke="#c07040" stroke-width="1.5"/>
+  <polygon points="133,128 143,128 138,133" fill="#c07040"/>
+  <text x="150" y="123" fill="#c07040" font-size="10">needs runtime</text>
+
+  <!-- Box 2: Container Runtime -->
+  <rect x="32" y="133" width="212" height="44" fill="#fff0e8" stroke="#c07040" stroke-width="1.5" rx="6"/>
+  <text x="138" y="151" text-anchor="middle" fill="#1a1a2e" font-size="12" font-weight="600">Container Runtime</text>
+  <text x="138" y="166" text-anchor="middle" fill="#c04040" font-size="10" font-weight="600">≡ host root access</text>
+
+  <!-- Arrow 2 -->
+  <line x1="138" y1="177" x2="138" y2="195" stroke="#c04040" stroke-width="1.5"/>
+  <polygon points="133,195 143,195 138,200" fill="#c04040"/>
+
+  <!-- Box 3: Consequence -->
+  <rect x="32" y="200" width="212" height="28" fill="#fde8e8" stroke="#c05050" stroke-width="1.5" rx="6"/>
+  <text x="138" y="218" text-anchor="middle" fill="#c04040" font-size="11" font-weight="600">✗  agent controls own sandbox</text>
+
+  <!-- === DIVIDER === -->
+  <line x1="270" y1="30" x2="270" y2="242" stroke="#c0c4d8" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- === RIGHT PANEL: FIX === -->
+  <rect x="280" y="16" width="244" height="228" fill="#f0f2f8" stroke="#c0c4d8" stroke-width="1" rx="10"/>
+  <text x="402" y="37" text-anchor="middle" fill="#5a5a7a" font-size="11" font-weight="600" letter-spacing="1">EXTERNAL PLANE MODEL</text>
+  <rect x="343" y="43" width="118" height="18" fill="#e8fde8" stroke="#4a8a4a" stroke-width="1" rx="4"/>
+  <text x="402" y="55" text-anchor="middle" fill="#3a9a3a" font-size="10" font-weight="600">ARCHITECTURAL FIX</text>
+
+  <!-- Box 1: Agent in sandbox -->
+  <rect x="296" y="66" width="212" height="44" fill="#dce8ff" stroke="#4080d0" stroke-width="1.5" rx="6"/>
+  <text x="402" y="84" text-anchor="middle" fill="#1a1a2e" font-size="12" font-weight="600">Orchestrator Agent</text>
+  <text x="402" y="99" text-anchor="middle" fill="#2a60a0" font-size="10">inside sandbox</text>
+
+  <!-- Arrow 1 -->
+  <line x1="402" y1="110" x2="402" y2="128" stroke="#4080d0" stroke-width="1.5"/>
+  <polygon points="397,128 407,128 402,133" fill="#4080d0"/>
+  <text x="414" y="123" fill="#4080d0" font-size="10">API call only</text>
+
+  <!-- Box 2: Orchestration Service -->
+  <rect x="296" y="133" width="212" height="44" fill="#ede8ff" stroke="#7060c0" stroke-width="1.5" rx="6"/>
+  <text x="402" y="151" text-anchor="middle" fill="#1a1a2e" font-size="12" font-weight="600">Orchestration Service</text>
+  <text x="402" y="166" text-anchor="middle" fill="#5040a0" font-size="10">holds runtime credentials</text>
+
+  <!-- Arrow 2 -->
+  <line x1="402" y1="177" x2="402" y2="195" stroke="#3a9a3a" stroke-width="1.5"/>
+  <polygon points="397,195 407,195 402,200" fill="#3a9a3a"/>
+
+  <!-- Box 3: Container Runtime -->
+  <rect x="296" y="200" width="212" height="28" fill="#e8fde8" stroke="#4a8a4a" stroke-width="1.5" rx="6"/>
+  <text x="402" y="218" text-anchor="middle" fill="#3a9a3a" font-size="11" font-weight="600">✓  runtime on separate trust plane</text>
+
+  <!-- Footer -->
+  <text x="270" y="256" text-anchor="middle" fill="#a0a0c0" font-size="9" letter-spacing="2" font-weight="600">MULTI-AGENT TOPOLOGY</text>
+
+</svg>
