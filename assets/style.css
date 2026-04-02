@@ -288,7 +288,7 @@ body {
 
 .post-body p {
   margin-bottom: 18px;
-  color: var(--secondary);
+  color: var(--text);
 }
 
 .post-body a {
