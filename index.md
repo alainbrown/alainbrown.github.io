@@ -32,6 +32,9 @@ description: "Software engineer building AI systems. Previously at Google and Li
     <a href="https://github.com/alainbrown/stack-agent">
       <img src="https://opengraph.githubassets.com/1/alainbrown/stack-agent" alt="stack-agent — AI-powered CLI for scaffolding full-stack applications" />
     </a>
+    <a href="https://github.com/alainbrown/openfable">
+      <img src="https://opengraph.githubassets.com/1/alainbrown/openfable" alt="openfable" />
+    </a>
     <a href="https://github.com/containerfy/containerfy">
       <img src="https://opengraph.githubassets.com/1/containerfy/containerfy" alt="containerfy — automatically containerize applications" />
     </a>
