@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 280" font-family="system-ui, -apple-system, sans-serif" font-size="13">
+
+  <!-- Background -->
+  <rect width="540" height="280" fill="#f8f9fc" rx="12"/>
+
+  <!-- Schema banner (top) -->
+  <rect x="40" y="22" width="460" height="64" fill="#ede8ff" stroke="#7060c0" stroke-width="1.5" rx="8"/>
+  <text x="56" y="44" fill="#3a1a6a" font-size="13" font-weight="700">WIKI.md</text>
+  <text x="130" y="44" fill="#5040a0" font-size="10" font-style="italic">the schema · the contract</text>
+  <text x="56" y="62" fill="#6050b0" font-size="10">page taxonomy · frontmatter contract · linking convention · log format</text>
+  <text x="56" y="78" fill="#6050b0" font-size="10">written once during init; governs every operation that follows</text>
+
+  <!-- Arrows showing schema governs both layers -->
+  <line x1="160" y1="93" x2="160" y2="128" stroke="#7060c0" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <polygon points="160,133 155,123 165,123" fill="#7060c0"/>
+  <line x1="380" y1="93" x2="380" y2="128" stroke="#7060c0" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <polygon points="380,133 375,123 385,123" fill="#7060c0"/>
+  <text x="270" y="113" text-anchor="middle" fill="#8070b8" font-size="9" font-style="italic">governs both layers below</text>
+
+  <!-- raw/ box (bottom left) -->
+  <rect x="40" y="138" width="220" height="118" fill="#f0f2f8" stroke="#c0c4d8" stroke-width="1.5" rx="8"/>
+  <text x="56" y="162" fill="#1a1a2e" font-size="13" font-weight="700">raw/</text>
+  <text x="100" y="162" fill="#5a5a7a" font-size="10" font-style="italic">source documents</text>
+  <text x="56" y="184" fill="#5a5a7a" font-size="11">articles · papers · PDFs</text>
+  <text x="56" y="201" fill="#5a5a7a" font-size="11">pasted text · captured discussions</text>
+  <line x1="56" y1="214" x2="244" y2="214" stroke="#c0c4d8" stroke-width="1"/>
+  <text x="56" y="232" fill="#3a9a3a" font-size="11" font-weight="600">human curates</text>
+  <text x="56" y="248" fill="#5a5a7a" font-size="11">LLM reads only · never writes</text>
+
+  <!-- wiki/ box (bottom right) -->
+  <rect x="280" y="138" width="220" height="118" fill="#dce8ff" stroke="#4080d0" stroke-width="1.5" rx="8"/>
+  <text x="296" y="162" fill="#1a3a6a" font-size="13" font-weight="700">wiki/</text>
+  <text x="338" y="162" fill="#2a60a0" font-size="10" font-style="italic">LLM-written pages</text>
+  <text x="296" y="184" fill="#4060a0" font-size="11">source summaries · concept pages</text>
+  <text x="296" y="201" fill="#4060a0" font-size="11">index · log</text>
+  <line x1="296" y1="214" x2="484" y2="214" stroke="#c0c4d8" stroke-width="1"/>
+  <text x="296" y="232" fill="#4080d0" font-size="11" font-weight="600">LLM writes</text>
+  <text x="296" y="248" fill="#4060a0" font-size="11">human reads · edits if needed</text>
+
+  <!-- Footer caption -->
+  <text x="270" y="274" text-anchor="middle" fill="#a0a0c0" font-size="9" letter-spacing="2" font-weight="600">LLM WIKI · THREE LAYERS</text>
+
+</svg>

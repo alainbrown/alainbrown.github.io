@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 300" font-family="system-ui, -apple-system, sans-serif" font-size="12">
+
+  <!-- Background -->
+  <rect width="540" height="300" fill="#f8f9fc" rx="12"/>
+
+  <!-- Persistent schema column (right side) -->
+  <rect x="340" y="40" width="170" height="220" fill="#ede8ff" stroke="#7060c0" stroke-width="1.5" rx="8"/>
+  <text x="425" y="62" text-anchor="middle" fill="#3a1a6a" font-size="13" font-weight="700">WIKI.md</text>
+  <text x="425" y="78" text-anchor="middle" fill="#5040a0" font-size="10" font-style="italic">the schema · persistent</text>
+  <line x1="356" y1="90" x2="494" y2="90" stroke="#c0b8d8" stroke-width="1"/>
+
+  <text x="356" y="110" fill="#5040a0" font-size="11">page taxonomy</text>
+  <text x="356" y="128" fill="#5040a0" font-size="11">frontmatter contract</text>
+  <text x="356" y="146" fill="#5040a0" font-size="11">linking convention</text>
+  <text x="356" y="164" fill="#5040a0" font-size="11">log format</text>
+  <text x="356" y="182" fill="#5040a0" font-size="11">ingest / query / lint rules</text>
+
+  <line x1="356" y1="194" x2="494" y2="194" stroke="#c0b8d8" stroke-width="1"/>
+  <text x="425" y="216" text-anchor="middle" fill="#6050b0" font-size="10" font-style="italic">read before every operation</text>
+  <text x="425" y="232" text-anchor="middle" fill="#6050b0" font-size="10" font-style="italic">edited by the human as</text>
+  <text x="425" y="248" text-anchor="middle" fill="#6050b0" font-size="10" font-style="italic">conventions evolve</text>
+
+  <!-- Session column (left side, 4 sessions stacked) -->
+
+  <!-- T0: Session 1 with skill -->
+  <text x="36" y="58" fill="#8a8aaa" font-size="11" font-weight="600">T₀</text>
+  <rect x="62" y="42" width="240" height="34" fill="#dce8ff" stroke="#4080d0" stroke-width="1.5" rx="6"/>
+  <text x="74" y="58" fill="#1a3a6a" font-size="11" font-weight="600">Session 1</text>
+  <text x="136" y="58" fill="#2a60a0" font-size="10" font-style="italic">skill loaded</text>
+  <text x="74" y="71" fill="#4060a0" font-size="10">writes the schema during init</text>
+  <line x1="302" y1="59" x2="338" y2="59" stroke="#4080d0" stroke-width="1.5"/>
+  <polygon points="338,59 332,55 332,63" fill="#4080d0"/>
+  <text x="320" y="52" text-anchor="end" fill="#4080d0" font-size="9" font-style="italic">writes</text>
+
+  <!-- T1: Session 2, no skill -->
+  <text x="36" y="112" fill="#8a8aaa" font-size="11" font-weight="600">T₁</text>
+  <rect x="62" y="96" width="240" height="34" fill="#f0f2f8" stroke="#c0c4d8" stroke-width="1" rx="6"/>
+  <text x="74" y="112" fill="#1a1a2e" font-size="11" font-weight="600">Session 2</text>
+  <text x="136" y="112" fill="#5a5a7a" font-size="10" font-style="italic">no skill loaded</text>
+  <text x="74" y="125" fill="#5a5a7a" font-size="10">reads schema · performs ingest</text>
+  <line x1="302" y1="113" x2="338" y2="113" stroke="#7090a0" stroke-width="1" stroke-dasharray="3,2"/>
+  <polygon points="338,113 332,109 332,117" fill="#7090a0"/>
+  <text x="320" y="106" text-anchor="end" fill="#7090a0" font-size="9" font-style="italic">reads</text>
+
+  <!-- T2: Session 3, different LLM -->
+  <text x="36" y="166" fill="#8a8aaa" font-size="11" font-weight="600">T₂</text>
+  <rect x="62" y="150" width="240" height="34" fill="#f0f2f8" stroke="#c0c4d8" stroke-width="1" rx="6"/>
+  <text x="74" y="166" fill="#1a1a2e" font-size="11" font-weight="600">Session 3</text>
+  <text x="136" y="166" fill="#5a5a7a" font-size="10" font-style="italic">different LLM (in principle)</text>
+  <text x="74" y="179" fill="#5a5a7a" font-size="10">reads schema · performs query</text>
+  <line x1="302" y1="167" x2="338" y2="167" stroke="#7090a0" stroke-width="1" stroke-dasharray="3,2"/>
+  <polygon points="338,167 332,163 332,171" fill="#7090a0"/>
+  <text x="320" y="160" text-anchor="end" fill="#7090a0" font-size="9" font-style="italic">reads</text>
+
+  <!-- TN: Session N, a year later -->
+  <text x="36" y="220" fill="#8a8aaa" font-size="11" font-weight="600">T_N</text>
+  <rect x="62" y="204" width="240" height="34" fill="#f0f2f8" stroke="#c0c4d8" stroke-width="1" rx="6"/>
+  <text x="74" y="220" fill="#1a1a2e" font-size="11" font-weight="600">Session N</text>
+  <text x="136" y="220" fill="#5a5a7a" font-size="10" font-style="italic">a year later</text>
+  <text x="74" y="233" fill="#5a5a7a" font-size="10">reads schema · performs lint</text>
+  <line x1="302" y1="221" x2="338" y2="221" stroke="#7090a0" stroke-width="1" stroke-dasharray="3,2"/>
+  <polygon points="338,221 332,217 332,225" fill="#7090a0"/>
+  <text x="320" y="214" text-anchor="end" fill="#7090a0" font-size="9" font-style="italic">reads</text>
+
+  <!-- Footer caption -->
+  <text x="270" y="290" text-anchor="middle" fill="#a0a0c0" font-size="9" letter-spacing="2" font-weight="600">THE SCHEMA OUTLIVES THE SESSION THAT WROTE IT</text>
+
+</svg>
