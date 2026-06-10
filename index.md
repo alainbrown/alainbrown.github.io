@@ -22,21 +22,55 @@ description: "Software engineer building AI systems. Previously at Google and Li
 
 <div class="section">
   <h2 class="section-title">Projects</h2>
-  <div class="project-grid">
-    <a href="https://github.com/alainbrown/skills">
-      <img src="https://opengraph.githubassets.com/1/alainbrown/skills" alt="skills - Agent skills that replace standalone apps" />
-    </a>
-    <a href="https://github.com/alainbrown/musicprint">
-      <img src="https://opengraph.githubassets.com/1/alainbrown/musicprint" alt="MusicPrint — offline song identification using compressed audio embeddings" />
-    </a>
-    <a href="https://github.com/alainbrown/stack-agent">
-      <img src="https://opengraph.githubassets.com/1/alainbrown/stack-agent" alt="stack-agent — AI-powered CLI for scaffolding full-stack applications" />
-    </a>
-    <a href="https://github.com/alainbrown/openfable">
-      <img src="https://opengraph.githubassets.com/1/alainbrown/openfable" alt="openfable" />
-    </a>
-    <a href="https://github.com/containerfy/containerfy">
-      <img src="https://opengraph.githubassets.com/1/containerfy/containerfy" alt="containerfy — automatically containerize applications" />
-    </a>
+  <div id="projects" class="projects">
+    <noscript><p><a href="https://github.com/alainbrown">See my projects on GitHub →</a></p></noscript>
   </div>
 </div>
+
+<script>
+(function () {
+  var README = "https://raw.githubusercontent.com/alainbrown/alainbrown/main/README.md";
+  var container = document.getElementById("projects");
+  if (!container) return;
+
+  fetch(README)
+    .then(function (r) { return r.ok ? r.text() : Promise.reject(r.status); })
+    .then(function (md) { render(md.split(/\r?\n/)); })
+    .catch(function () {
+      container.innerHTML = '<p><a href="https://github.com/alainbrown">See my projects on GitHub →</a></p>';
+    });
+
+  function render(lines) {
+    var bullet = /^[-*]\s*(\S.*?)?\s*\[\*\*(.+?)\*\*\]\((.+?)\)\s*:?\s*(.*)$/;
+    var subhead = /^#{2,3}\s+(.+?)\s*$/;
+    var html = "";
+    var open = false;
+
+    lines.forEach(function (line) {
+      var m = line.match(bullet);
+      if (m) {
+        if (!open) { html += '<ul class="post-list">'; open = true; }
+        var emoji = (m[1] || "").trim();
+        html += '<li><a href="' + esc(m[3]) + '">'
+          + '<span class="title">' + (emoji ? esc(emoji) + " " : "") + esc(m[2]) + "</span>"
+          + (m[4] ? '<span class="excerpt">' + esc(m[4]) + "</span>" : "")
+          + "</a></li>";
+        return;
+      }
+      var s = line.match(subhead);
+      if (s && !/^hi there/i.test(s[1])) {
+        if (open) { html += "</ul>"; open = false; }
+        html += '<h3 class="project-subhead">' + esc(s[1]) + "</h3>";
+      }
+    });
+    if (open) html += "</ul>";
+    container.innerHTML = html || '<p><a href="https://github.com/alainbrown">See my projects on GitHub →</a></p>';
+  }
+
+  function esc(s) {
+    return s.replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+})();
+</script>

@@ -228,6 +228,16 @@ body {
   display: block;
 }
 
+.project-subhead {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--muted);
+  margin: 24px 0 12px;
+}
+.project-subhead:first-child { margin-top: 0; }
+
 /* --- Blog page title --- */
 .page-title {
   font-family: var(--font-serif);
