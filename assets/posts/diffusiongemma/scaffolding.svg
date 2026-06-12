@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300" font-family="system-ui, -apple-system, sans-serif" font-size="13">
+  <style>
+    rect.cell   { fill: #eef1fa; stroke: #b0b8d8; stroke-width: 1.5; rx: 5; }
+    rect.mask   { fill: #e7eaf2; stroke: #cdd3e4; stroke-width: 1.5; rx: 5; }
+    rect.anchor { fill: #e3f7e3; stroke: #4a8a4a; stroke-width: 1.5; rx: 5; }
+    rect.letter { fill: #eef1fa; stroke: #b0b8d8; stroke-width: 1.5; rx: 5; }
+    text.ltr  { fill: #2f7d32; font-size: 13px; font-weight: 700; }
+    text.ltrd { fill: #1a1a2e; font-size: 13px; font-weight: 700; }
+    text.maskt { fill: #9aa3bd; font-size: 12px; }
+    text.heading { fill: #1a1a2e; font-weight: 600; font-size: 12px; letter-spacing: 1px; }
+    text.caption { fill: #5a5a7a; font-size: 10.5px; font-style: italic; }
+    line.arrow { stroke: #4080d0; stroke-width: 2; }
+    polygon.arrow { fill: #4080d0; }
+    line.div { stroke: #c0c4d8; stroke-width: 1; stroke-dasharray: 4,4; }
+    text.lbl { fill: #5a5a7a; font-size: 10px; }
+  </style>
+
+  <rect width="560" height="300" fill="#f8f9fc" rx="12"/>
+
+  <text class="heading" x="105" y="42" text-anchor="middle">EARLY STEP</text>
+  <text class="heading" x="424" y="42" text-anchor="middle">FINAL</text>
+  <line class="div" x1="250" y1="52" x2="250" y2="256"/>
+
+  <!-- rows: O C E A N S -->
+  <!-- O -->
+  <rect class="anchor" x="40" y="64" width="26" height="24"/><text class="ltr" x="53" y="81" text-anchor="middle">O</text>
+  <rect class="mask" x="74"  y="64" width="28" height="24"/><text class="maskt" x="88"  y="81" text-anchor="middle">&#9617;</text>
+  <rect class="mask" x="108" y="64" width="28" height="24"/><text class="maskt" x="122" y="81" text-anchor="middle">&#9617;</text>
+  <rect class="mask" x="142" y="64" width="28" height="24"/><text class="maskt" x="156" y="81" text-anchor="middle">&#9617;</text>
+  <rect class="letter" x="326" y="64" width="26" height="24"/><text class="ltrd" x="339" y="81" text-anchor="middle">O</text>
+  <rect class="cell" x="358" y="64" width="46" height="24"/>
+  <rect class="cell" x="410" y="64" width="30" height="24"/>
+  <rect class="cell" x="446" y="64" width="50" height="24"/>
+
+  <!-- C -->
+  <rect class="anchor" x="40" y="96" width="26" height="24"/><text class="ltr" x="53" y="113" text-anchor="middle">C</text>
+  <rect class="mask" x="74"  y="96" width="28" height="24"/><text class="maskt" x="88"  y="113" text-anchor="middle">&#9617;</text>
+  <rect class="mask" x="108" y="96" width="28" height="24"/><text class="maskt" x="122" y="113" text-anchor="middle">&#9617;</text>
+  <rect class="mask" x="142" y="96" width="28" height="24"/><text class="maskt" x="156" y="113" text-anchor="middle">&#9617;</text>
+  <rect class="letter" x="326" y="96" width="26" height="24"/><text class="ltrd" x="339" y="113" text-anchor="middle">C</text>
+  <rect class="cell" x="358" y="96" width="38" height="24"/>
+  <rect class="cell" x="402" y="96" width="52" height="24"/>
+  <rect class="cell" x="460" y="96" width="36" height="24"/>
+
+  <!-- E -->
+  <rect class="anchor" x="40" y="128" width="26" height="24"/><text class="ltr" x="53" y="145" text-anchor="middle">E</text>
+  <rect class="mask" x="74"  y="128" width="28" height="24"/><text class="maskt" x="88"  y="145" text-anchor="middle">&#9617;</text>
+  <rect class="mask" x="108" y="128" width="28" height="24"/><text class="maskt" x="122" y="145" text-anchor="middle">&#9617;</text>
+  <rect class="mask" x="142" y="128" width="28" height="24"/><text class="maskt" x="156" y="145" text-anchor="middle">&#9617;</text>
+  <rect class="letter" x="326" y="128" width="26" height="24"/><text class="ltrd" x="339" y="145" text-anchor="middle">E</text>
+  <rect class="cell" x="358" y="128" width="50" height="24"/>
+  <rect class="cell" x="414" y="128" width="34" height="24"/>
+  <rect class="cell" x="454" y="128" width="42" height="24"/>
+
+  <!-- A -->
+  <rect class="anchor" x="40" y="160" width="26" height="24"/><text class="ltr" x="53" y="177" text-anchor="middle">A</text>
+  <rect class="mask" x="74"  y="160" width="28" height="24"/><text class="maskt" x="88"  y="177" text-anchor="middle">&#9617;</text>
+  <rect class="mask" x="108" y="160" width="28" height="24"/><text class="maskt" x="122" y="177" text-anchor="middle">&#9617;</text>
+  <rect class="mask" x="142" y="160" width="28" height="24"/><text class="maskt" x="156" y="177" text-anchor="middle">&#9617;</text>
+  <rect class="letter" x="326" y="160" width="26" height="24"/><text class="ltrd" x="339" y="177" text-anchor="middle">A</text>
+  <rect class="cell" x="358" y="160" width="42" height="24"/>
+  <rect class="cell" x="406" y="160" width="44" height="24"/>
+  <rect class="cell" x="456" y="160" width="40" height="24"/>
+
+  <!-- N -->
+  <rect class="anchor" x="40" y="192" width="26" height="24"/><text class="ltr" x="53" y="209" text-anchor="middle">N</text>
+  <rect class="mask" x="74"  y="192" width="28" height="24"/><text class="maskt" x="88"  y="209" text-anchor="middle">&#9617;</text>
+  <rect class="mask" x="108" y="192" width="28" height="24"/><text class="maskt" x="122" y="209" text-anchor="middle">&#9617;</text>
+  <rect class="mask" x="142" y="192" width="28" height="24"/><text class="maskt" x="156" y="209" text-anchor="middle">&#9617;</text>
+  <rect class="letter" x="326" y="192" width="26" height="24"/><text class="ltrd" x="339" y="209" text-anchor="middle">N</text>
+  <rect class="cell" x="358" y="192" width="34" height="24"/>
+  <rect class="cell" x="398" y="192" width="50" height="24"/>
+  <rect class="cell" x="454" y="192" width="42" height="24"/>
+
+  <!-- S -->
+  <rect class="anchor" x="40" y="224" width="26" height="24"/><text class="ltr" x="53" y="241" text-anchor="middle">S</text>
+  <rect class="mask" x="74"  y="224" width="28" height="24"/><text class="maskt" x="88"  y="241" text-anchor="middle">&#9617;</text>
+  <rect class="mask" x="108" y="224" width="28" height="24"/><text class="maskt" x="122" y="241" text-anchor="middle">&#9617;</text>
+  <rect class="mask" x="142" y="224" width="28" height="24"/><text class="maskt" x="156" y="241" text-anchor="middle">&#9617;</text>
+  <rect class="letter" x="326" y="224" width="26" height="24"/><text class="ltrd" x="339" y="241" text-anchor="middle">S</text>
+  <rect class="cell" x="358" y="224" width="46" height="24"/>
+  <rect class="cell" x="410" y="224" width="34" height="24"/>
+  <rect class="cell" x="450" y="224" width="46" height="24"/>
+
+  <!-- Arrow between states -->
+  <line class="arrow" x1="196" y1="155" x2="312" y2="155"/><polygon class="arrow" points="308,149 320,155 308,161"/>
+  <text class="lbl" x="258" y="146" text-anchor="middle">denoise</text>
+
+  <text class="caption" x="105" y="278" text-anchor="middle">acrostic letters land first, as anchors</text>
+  <text class="caption" x="424" y="278" text-anchor="middle">each line's text fills in around its letter</text>
+</svg>

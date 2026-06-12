@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 330" font-family="system-ui, -apple-system, sans-serif" font-size="13">
+  <style>
+    rect.panel { fill: #f0f2f8; stroke: #c0c4d8; stroke-width: 1; rx: 10; }
+    rect.cell  { fill: #eef1fa; stroke: #b0b8d8; stroke-width: 1.5; rx: 5; }
+    rect.mask  { fill: #e7eaf2; stroke: #cdd3e4; stroke-width: 1.5; rx: 5; }
+    rect.fresh { fill: #e3f7e3; stroke: #4a8a4a; stroke-width: 1.5; rx: 5; }
+    rect.draft { fill: #f1e9fc; stroke: #9a6fce; stroke-width: 1.5; rx: 5; }
+    text.tok   { fill: #1a1a2e; font-size: 12px; font-weight: 500; }
+    text.tokd  { fill: #7a4fb0; font-size: 12px; font-weight: 500; }
+    text.maskt { fill: #9aa3bd; font-size: 12px; }
+    text.heading { fill: #1a1a2e; font-weight: 600; font-size: 12px; letter-spacing: 1px; }
+    text.detail  { fill: #5a5a7a; font-size: 10.5px; }
+    text.step    { fill: #8a8aa2; font-size: 9.5px; font-weight: 600; letter-spacing: 0.5px; }
+    text.caption { fill: #5a5a7a; font-size: 10.5px; font-style: italic; }
+    line.arrow { stroke: #4080d0; stroke-width: 1.5; }
+    polygon.arrow { fill: #4080d0; }
+    line.div { stroke: #c0c4d8; stroke-width: 1; stroke-dasharray: 4,4; }
+  </style>
+
+  <rect width="560" height="330" fill="#f8f9fc" rx="12"/>
+
+  <!-- Panels -->
+  <rect class="panel" x="16" y="16" width="252" height="298"/>
+  <rect class="panel" x="292" y="16" width="252" height="298"/>
+  <line class="div" x1="280" y1="28" x2="280" y2="302"/>
+
+  <!-- Headings -->
+  <text class="heading" x="142" y="44" text-anchor="middle">AUTOREGRESSIVE</text>
+  <text class="detail"  x="142" y="60" text-anchor="middle">one token at a time, left to right</text>
+  <text class="heading" x="418" y="44" text-anchor="middle">DIFFUSION</text>
+  <text class="detail"  x="418" y="60" text-anchor="middle">whole block denoised in parallel</text>
+
+  <!-- ===== LEFT: autoregressive ===== -->
+  <!-- step 1 -->
+  <text class="step" x="32" y="74">STEP 1</text>
+  <rect class="fresh" x="32"  y="80" width="40" height="28"/><text class="tok"  x="52"  y="98" text-anchor="middle">the</text>
+  <rect class="mask"  x="77"  y="80" width="40" height="28"/><text class="maskt" x="97"  y="98" text-anchor="middle">&#9617;</text>
+  <rect class="mask"  x="122" y="80" width="40" height="28"/><text class="maskt" x="142" y="98" text-anchor="middle">&#9617;</text>
+  <rect class="mask"  x="167" y="80" width="40" height="28"/><text class="maskt" x="187" y="98" text-anchor="middle">&#9617;</text>
+  <rect class="mask"  x="212" y="80" width="40" height="28"/><text class="maskt" x="232" y="98" text-anchor="middle">&#9617;</text>
+  <line class="arrow" x1="142" y1="110" x2="142" y2="146"/><polygon class="arrow" points="137,142 142,150 147,142"/>
+  <!-- step 3 -->
+  <text class="step" x="32" y="144">STEP 3</text>
+  <rect class="cell"  x="32"  y="150" width="40" height="28"/><text class="tok"  x="52"  y="168" text-anchor="middle">the</text>
+  <rect class="cell"  x="77"  y="150" width="40" height="28"/><text class="tok"  x="97"  y="168" text-anchor="middle">sky</text>
+  <rect class="fresh" x="122" y="150" width="40" height="28"/><text class="tok"  x="142" y="168" text-anchor="middle">is</text>
+  <rect class="mask"  x="167" y="150" width="40" height="28"/><text class="maskt" x="187" y="168" text-anchor="middle">&#9617;</text>
+  <rect class="mask"  x="212" y="150" width="40" height="28"/><text class="maskt" x="232" y="168" text-anchor="middle">&#9617;</text>
+  <line class="arrow" x1="142" y1="180" x2="142" y2="216"/><polygon class="arrow" points="137,212 142,220 147,212"/>
+  <!-- step 5 -->
+  <text class="step" x="32" y="214">STEP 5</text>
+  <rect class="cell"  x="32"  y="220" width="40" height="28"/><text class="tok"  x="52"  y="238" text-anchor="middle">the</text>
+  <rect class="cell"  x="77"  y="220" width="40" height="28"/><text class="tok"  x="97"  y="238" text-anchor="middle">sky</text>
+  <rect class="cell"  x="122" y="220" width="40" height="28"/><text class="tok"  x="142" y="238" text-anchor="middle">is</text>
+  <rect class="cell"  x="167" y="220" width="40" height="28"/><text class="tok"  x="187" y="238" text-anchor="middle">so</text>
+  <rect class="fresh" x="212" y="220" width="40" height="28"/><text class="tok"  x="232" y="238" text-anchor="middle">blue</text>
+
+  <text class="caption" x="142" y="300" text-anchor="middle">position N, then N+1 — order is fixed</text>
+
+  <!-- ===== RIGHT: diffusion ===== -->
+  <!-- step 1 -->
+  <text class="step" x="308" y="74">STEP 1</text>
+  <rect class="mask" x="308" y="80" width="40" height="28"/><text class="maskt" x="328" y="98" text-anchor="middle">&#9617;</text>
+  <rect class="mask" x="353" y="80" width="40" height="28"/><text class="maskt" x="373" y="98" text-anchor="middle">&#9617;</text>
+  <rect class="mask" x="398" y="80" width="40" height="28"/><text class="maskt" x="418" y="98" text-anchor="middle">&#9617;</text>
+  <rect class="mask" x="443" y="80" width="40" height="28"/><text class="maskt" x="463" y="98" text-anchor="middle">&#9617;</text>
+  <rect class="mask" x="488" y="80" width="40" height="28"/><text class="maskt" x="508" y="98" text-anchor="middle">&#9617;</text>
+  <line class="arrow" x1="418" y1="110" x2="418" y2="146"/><polygon class="arrow" points="413,142 418,150 423,142"/>
+  <!-- step 6 -->
+  <text class="step" x="308" y="144">STEP 6</text>
+  <rect class="fresh" x="308" y="150" width="40" height="28"/><text class="tok"  x="328" y="168" text-anchor="middle">the</text>
+  <rect class="mask"  x="353" y="150" width="40" height="28"/><text class="maskt" x="373" y="168" text-anchor="middle">&#9617;</text>
+  <rect class="draft" x="398" y="150" width="40" height="28"/><text class="tokd" x="418" y="168" text-anchor="middle">is</text>
+  <rect class="mask"  x="443" y="150" width="40" height="28"/><text class="maskt" x="463" y="168" text-anchor="middle">&#9617;</text>
+  <rect class="fresh" x="488" y="150" width="40" height="28"/><text class="tok"  x="508" y="168" text-anchor="middle">blue</text>
+  <line class="arrow" x1="418" y1="180" x2="418" y2="216"/><polygon class="arrow" points="413,212 418,220 423,212"/>
+  <!-- step 11 -->
+  <text class="step" x="308" y="214">STEP 11</text>
+  <rect class="cell"  x="308" y="220" width="40" height="28"/><text class="tok"  x="328" y="238" text-anchor="middle">the</text>
+  <rect class="fresh" x="353" y="220" width="40" height="28"/><text class="tok"  x="373" y="238" text-anchor="middle">sky</text>
+  <rect class="cell"  x="398" y="220" width="40" height="28"/><text class="tok"  x="418" y="238" text-anchor="middle">is</text>
+  <rect class="fresh" x="443" y="220" width="40" height="28"/><text class="tok"  x="463" y="238" text-anchor="middle">so</text>
+  <rect class="cell"  x="488" y="220" width="40" height="28"/><text class="tok"  x="508" y="238" text-anchor="middle">blue</text>
+
+  <text class="caption" x="418" y="294" text-anchor="middle">any position, by confidence —</text>
+  <text class="caption" x="418" y="307" text-anchor="middle">the ends can lock before the middle</text>
+</svg>
