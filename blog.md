@@ -8,7 +8,8 @@ description: "Writing on AI systems, machine learning engineering, and software 
 
 <div class="section">
   <ul class="post-list">
-  {% for post in site.posts %}
+  {% assign visible_posts = site.posts | where_exp: "post", "post.archived != true" %}
+  {% for post in visible_posts %}
     <li>
       <a href="{{ post.url }}">
         <span class="title">{{ post.title }}</span>

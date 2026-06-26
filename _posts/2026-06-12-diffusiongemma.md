@@ -1,6 +1,7 @@
 ---
 title: "Watching a language model denoise instead of type"
 date: 2026-06-12
+archived: true
 description: "DiffusionGemma generates a whole block of text from noise in parallel, not left-to-right. I built a visualizer so you can watch it happen."
 image: /assets/og/diffusiongemma.png
 ai_disclosure: "Written with Claude. I wrote the ideas and structure; Claude helped refine the prose."

@@ -8,7 +8,8 @@ description: "Software engineer building AI systems. Previously at Google and Li
 <div class="section">
   <h2 class="section-title">Writing</h2>
   <ul class="post-list">
-  {% for post in site.posts limit:5 %}
+  {% assign visible_posts = site.posts | where_exp: "post", "post.archived != true" %}
+  {% for post in visible_posts limit:5 %}
     <li>
       <a href="{{ post.url }}">
         <span class="title">{{ post.title }}</span>
